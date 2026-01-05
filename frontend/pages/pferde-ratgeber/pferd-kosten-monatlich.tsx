@@ -153,7 +153,7 @@ export default function PferdKostenMonatlich() {
       {/* Hero Section */}
       <RatgeberHero
         title="Was kostet ein Pferd im Monat?"
-        subtitle="Echte Daten aus unserer Community – 40% zahlen 400-600€ pro Monat, wir selbst über 800€. Erfahre hier, warum."
+        subtitle="Echte Daten aus unserer Community – 40% zahlen 400-600€ pro Monat, wir selbst über 800€. Hier die komplette Aufschlüsselung."
         primaryCta={PRIMARY_CTA}
         secondaryCta={SECONDARY_CTA}
       />
