@@ -9,6 +9,8 @@ import RatgeberHead from '@/components/ratgeber/RatgeberHead'
 import FAQ from '@/components/FAQ'
 import RatgeberRelatedArticles from '@/components/ratgeber/RatgeberRelatedArticles'
 import RatgeberFinalCTA from '@/components/ratgeber/RatgeberFinalCTA'
+import SurveyBox from '@/components/surveys/SurveyBox'
+import { monthlyCostsSurvey } from '@/data/surveys/monthly-costs'
 import { Calculator } from 'lucide-react'
 import { getRelatedArticles, getRatgeberPath } from '@/lib/ratgeber-registry'
 import AuthorBox from '@/components/AuthorBox'
@@ -85,33 +87,34 @@ const SECONDARY_CTA = {
 }
 
 // SEO Locale Content for RatgeberHead
+// Community-Daten: 40% zahlen 400-600€, 30% über 800€ (43 Teilnehmer)
 const seoLocales = {
   de: {
-    title: 'Was kostet ein Pferd im Monat? Realistische Übersicht 2025',
-    description: 'Was kostet ein Pferd monatlich? Detaillierte Kostenübersicht: Stallmiete, Futter, Hufschmied, Tierarzt. Mit Budget-Beispielen und Spartipps.',
+    title: 'Was kostet ein Pferd im Monat? 40% zahlen 400-600€ (Umfrage)',
+    description: 'Was kostet ein Pferd monatlich? Unsere Community-Umfrage zeigt: 40% zahlen 400-600€, 30% über 800€. Alle Kosten mit Spartipps.',
     keywords: 'was kostet ein pferd im monat, pferd kosten monatlich, pferdehalter kosten, unterhaltskosten pferd, stallmiete, futterkosten pferd',
-    ogTitle: 'Was kostet ein Pferd im Monat? Realistische Übersicht 2025',
-    ogDescription: 'Was kostet ein Pferd monatlich? Detaillierte Kostenübersicht mit Stallmiete, Futter, Hufschmied und Tierarzt. Plus: 3 Budget-Beispiele.',
-    twitterTitle: 'Was kostet ein Pferd im Monat? Übersicht 2025',
-    twitterDescription: 'Detaillierte Kostenübersicht für Pferdehalter: Stallmiete, Futter, Hufschmied und mehr.',
+    ogTitle: 'Was kostet ein Pferd im Monat? Community-Umfrage 2025',
+    ogDescription: 'Echte Daten: 40% der Pferdebesitzer zahlen 400-600€/Monat. Detaillierte Kostenübersicht mit Spartipps und Budget-Szenarien.',
+    twitterTitle: 'Was zahlen Pferdebesitzer wirklich? Umfrage-Ergebnisse',
+    twitterDescription: '40% zahlen 400-600€, 30% über 800€ – echte Daten von Pferdebesitzern mit Spartipps.',
   },
   at: {
-    title: 'Was kostet ein Pferd im Monat in Österreich? Übersicht 2025',
-    description: 'Was kostet ein Pferd monatlich in Österreich? Kostenübersicht mit regionalen Preisen, Stallmiete, Futter und Versicherungen.',
+    title: 'Was kostet ein Pferd im Monat in Österreich? Umfrage-Ergebnisse',
+    description: 'Pferdekosten Österreich: 40% zahlen 400-600€/Monat laut Community-Umfrage. Alle Kosten mit österreichischen Preisen.',
     keywords: 'pferd kosten monatlich österreich, pferdehalter kosten at, unterhaltskosten pferd',
-    ogTitle: 'Was kostet ein Pferd im Monat in Österreich? Übersicht 2025',
-    ogDescription: 'Was kostet ein Pferd monatlich in Österreich? Detaillierte Kostenübersicht mit österreichischen Preisen.',
-    twitterTitle: 'Pferdekosten in Österreich: Monatliche Übersicht',
-    twitterDescription: 'Kostenübersicht für österreichische Pferdehalter mit regionalen Preisen.',
+    ogTitle: 'Pferdekosten Österreich: Was zahlen Pferdebesitzer wirklich?',
+    ogDescription: 'Echte Umfrage-Daten: 40% zahlen 400-600€, 30% über 800€. Kostenübersicht für österreichische Pferdehalter.',
+    twitterTitle: 'Pferdekosten Österreich: Community-Umfrage',
+    twitterDescription: '40% zahlen 400-600€/Monat – echte Daten von Pferdebesitzern in Österreich.',
   },
   ch: {
-    title: 'Was kostet ein Pferd im Monat in der Schweiz? Übersicht CHF',
-    description: 'Was kostet ein Pferd monatlich in der Schweiz? Kostenübersicht in CHF: Stallmiete, Futter, Hufschmied und Versicherungen.',
+    title: 'Was kostet ein Pferd im Monat in der Schweiz? Umfrage CHF',
+    description: 'Pferdekosten Schweiz: Community-Umfrage zeigt echte monatliche Kosten. Detaillierte Übersicht in CHF mit Spartipps.',
     keywords: 'pferd kosten monatlich schweiz, pferdehalter kosten chf, unterhaltskosten pferd',
-    ogTitle: 'Was kostet ein Pferd im Monat in der Schweiz? Übersicht CHF',
-    ogDescription: 'Was kostet ein Pferd monatlich in der Schweiz? Kostenübersicht in CHF mit Schweizer Stallpreisen und Versicherungen.',
-    twitterTitle: 'Pferdekosten in der Schweiz: Monatliche Übersicht CHF',
-    twitterDescription: 'Kostenübersicht für Schweizer Pferdehalter in CHF mit aktuellen Preisen.',
+    ogTitle: 'Pferdekosten Schweiz: Was zahlen Pferdebesitzer wirklich?',
+    ogDescription: 'Echte Umfrage-Daten von Pferdebesitzern. Kostenübersicht in CHF mit Schweizer Stallpreisen und Spartipps.',
+    twitterTitle: 'Pferdekosten Schweiz: Community-Umfrage CHF',
+    twitterDescription: 'Echte Daten: Was zahlen Pferdebesitzer in der Schweiz? Mit Spartipps.',
   },
 }
 
@@ -150,7 +153,7 @@ export default function PferdKostenMonatlich() {
       {/* Hero Section */}
       <RatgeberHero
         title="Was kostet ein Pferd im Monat?"
-        subtitle="Realistische Kostenübersicht für Pferdehalter – mit Budget-Szenarien und Spartipps"
+        subtitle="Echte Daten aus unserer Community – 40% zahlen 400-600€, wir selbst über 800€"
         primaryCta={PRIMARY_CTA}
         secondaryCta={SECONDARY_CTA}
       />
@@ -171,6 +174,14 @@ export default function PferdKostenMonatlich() {
                 kompletten Kostenüberblick
               </LocalizedLink>.
             </p>
+          </section>
+
+          {/* Community Survey - Unique Content! */}
+          <section className="scroll-mt-32 lg:scroll-mt-40">
+            <SurveyBox
+              survey={monthlyCostsSurvey}
+              allowVoting={true}
+            />
           </section>
 
           {/* Table of Contents */}
