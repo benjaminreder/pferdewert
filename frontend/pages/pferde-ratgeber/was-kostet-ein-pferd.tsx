@@ -141,7 +141,7 @@ export default function WasKostetEinPferd() {
     <Layout fullWidth={true} background="bg-gradient-to-b from-amber-50 to-white">
       <RatgeberHead
         slug="was-kostet-ein-pferd"
-        image="/images/ratgeber/pferd-kaufen/was-kostet-ein-pferd/horse-chestnut-eating-hay-stable-window.webp"
+        image="/images/ratgeber/haflinger-portrait-blauer-himmel.webp"
         locales={seoLocales}
         datePublished="2025-10-11"
         dateModified="2025-12-28"
@@ -165,8 +165,8 @@ export default function WasKostetEinPferd() {
         />
 
       <RatgeberHeroImage
-        src="/images/ratgeber/pferd-kaufen/was-kostet-ein-pferd/horse-chestnut-eating-hay-stable-window.webp"
-        alt="Was kostet ein Pferd? Kostenübersicht"
+        src="/images/ratgeber/haflinger-portrait-blauer-himmel.webp"
+        alt="Was kostet ein Pferd? Haflinger Portrait"
         priority
       />
 

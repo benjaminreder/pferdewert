@@ -110,7 +110,7 @@ export const RATGEBER_ENTRIES: RatgeberEntry[] = [
     description: 'Detaillierte Übersicht aller Kosten: Kaufpreis, laufende Kosten und versteckte Ausgaben. So planst du dein Budget richtig.',
     category: 'Kauf & Verkauf',
     readTime: '14 Min.',
-    image: '/images/ratgeber/pferd-kaufen/was-kostet-ein-pferd/horse-chestnut-eating-hay-stable-window.webp', // Stallaufnahme – fokussiert auf Kosten & Versorgung
+    image: '/images/ratgeber/haflinger-portrait-blauer-himmel.webp', // Haflinger Portrait – freundliches, einladendes Pferdebild
     priority: '0.7',
     changefreq: 'monthly',
     relatedSlugs: [
