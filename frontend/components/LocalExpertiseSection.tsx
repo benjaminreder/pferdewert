@@ -2,7 +2,7 @@
 // Unique content section for AT/CH domains explaining localized algorithm
 // Purpose: Differentiate AT/CH from DE to improve indexing
 
-import { MapPin, Award, CheckCircle, Settings } from 'lucide-react';
+import { MapPin, Award, CheckCircle, Settings, Heart, TrendingUp } from 'lucide-react';
 import { useCountryConfig } from '@/hooks/useCountryConfig';
 
 // Pre-define icons at module level (Fast Refresh Fix)
@@ -10,6 +10,8 @@ const mapPinIcon = <MapPin className="w-6 h-6 text-brand-brown" />;
 const awardIcon = <Award className="w-6 h-6 text-brand-brown" />;
 const checkCircleIcon = <CheckCircle className="w-6 h-6 text-brand-brown" />;
 const settingsIcon = <Settings className="w-6 h-6 text-brand-brown" />;
+const heartIcon = <Heart className="w-6 h-6 text-brand-brown" />;
+const trendingUpIcon = <TrendingUp className="w-6 h-6 text-brand-brown" />;
 
 export default function LocalExpertiseSection() {
   const { isAustria, isSwitzerland } = useCountryConfig();
@@ -52,6 +54,42 @@ export default function LocalExpertiseSection() {
         'Berücksichtigung des Schweizer Preisniveaus',
         'Freiberger-Expertise: Die Schweizer Nationalrasse'
       ];
+
+  // Popular breeds in the country
+  const popularBreeds = isAustria
+    ? [
+        { name: 'Haflinger', note: 'Österreichs beliebteste Rasse' },
+        { name: 'Lipizzaner', note: 'Spanische Hofreitschule Wien' },
+        { name: 'Noriker', note: 'Traditionelle Kaltblutrasse' },
+        { name: 'Warmblut', note: 'Dressur & Springen' },
+      ]
+    : [
+        { name: 'Freiberger', note: 'Schweizer Nationalrasse' },
+        { name: 'Warmblut', note: 'Sport & Freizeit' },
+        { name: 'Haflinger', note: 'Beliebte Freizeitrasse' },
+        { name: 'Isländer', note: 'Für Gangpferde-Fans' },
+      ];
+
+  // Regional price factors
+  const regionalFactors = isAustria
+    ? {
+        headline: 'Regionale Preisunterschiede in Österreich',
+        description: 'Der österreichische Pferdemarkt zeigt deutliche regionale Unterschiede. Pferde aus Tirol und Vorarlberg erzielen oft andere Preise als in Niederösterreich oder der Steiermark.',
+        examples: [
+          { region: 'Wien & Umgebung', factor: 'Höhere Nachfrage, urbaner Markt' },
+          { region: 'Tirol & Salzburg', factor: 'Starke Haflinger-Tradition' },
+          { region: 'Steiermark', factor: 'Vielseitiger Markt, gute Zuchtbetriebe' },
+        ]
+      }
+    : {
+        headline: 'Regionale Preisunterschiede in der Schweiz',
+        description: 'Die Schweizer Kantone zeigen unterschiedliche Marktdynamiken. Das generell höhere Preisniveau wird durch unsere Bewertung berücksichtigt.',
+        examples: [
+          { region: 'Zürich & Basel', factor: 'Urbaner Markt, höhere Preise' },
+          { region: 'Jura & Bern', factor: 'Freiberger-Hochburg' },
+          { region: 'Graubünden', factor: 'Bergregion, robuste Rassen' },
+        ]
+      };
 
   return (
     <section className="section bg-gradient-to-b from-white to-brand-light/20">
@@ -145,6 +183,60 @@ export default function LocalExpertiseSection() {
                 einen anderen Marktwert haben als dasselbe Pferd in {isAustria ? 'Wien' : 'Zürich'}.
                 Unsere Bewertung berücksichtigt diese regionalen Unterschiede.
               </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Second Row: Popular Breeds & Regional Factors */}
+        <div className="grid lg:grid-cols-2 gap-8 max-w-6xl mx-auto mt-8">
+
+          {/* Popular Breeds Card */}
+          <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
+            <div className="flex items-center gap-3 mb-6">
+              {heartIcon}
+              <h3 className="text-xl font-bold text-gray-900">
+                Beliebte Rassen in {countryName}
+              </h3>
+            </div>
+
+            <p className="text-gray-600 mb-6">
+              Unsere KI kennt die Besonderheiten der in {countryName} beliebten Pferderassen
+              und bewertet sie entsprechend ihrer Marktrelevanz.
+            </p>
+
+            <div className="grid grid-cols-2 gap-3">
+              {popularBreeds.map((breed, index) => (
+                <div key={index} className="bg-brand-light/30 rounded-lg p-3">
+                  <p className="font-semibold text-gray-900">{breed.name}</p>
+                  <p className="text-xs text-gray-600">{breed.note}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Regional Price Factors Card */}
+          <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
+            <div className="flex items-center gap-3 mb-6">
+              {trendingUpIcon}
+              <h3 className="text-xl font-bold text-gray-900">
+                {regionalFactors.headline}
+              </h3>
+            </div>
+
+            <p className="text-gray-600 mb-6">
+              {regionalFactors.description}
+            </p>
+
+            <div className="space-y-3">
+              {regionalFactors.examples.map((example, index) => (
+                <div key={index} className="flex items-start gap-3">
+                  <MapPin className="w-4 h-4 text-brand-brown mt-1 flex-shrink-0" />
+                  <div>
+                    <span className="font-medium text-gray-900">{example.region}:</span>{' '}
+                    <span className="text-gray-600">{example.factor}</span>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </div>

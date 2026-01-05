@@ -9,19 +9,19 @@ import RatgeberHead from '@/components/ratgeber/RatgeberHead'
 import FAQ from '@/components/FAQ'
 import RatgeberRelatedArticles from '@/components/ratgeber/RatgeberRelatedArticles'
 import RatgeberFinalCTA from '@/components/ratgeber/RatgeberFinalCTA'
-import SurveyBox from '@/components/surveys/SurveyBox'
+// SurveyBox moved to pferd-kosten-monatlich
 import { Calculator, ShieldAlert } from 'lucide-react'
 import { getRelatedArticles, getRatgeberPath } from '@/lib/ratgeber-registry'
 import AuthorBox from '@/components/AuthorBox'
-import { monthlyCostsSurvey } from '@/data/surveys/monthly-costs'
+// Survey moved to pferd-kosten-monatlich.tsx
 
 // Section definitions for Table of Contents
+// Note: Detailed monthly costs are covered in /pferde-ratgeber/pferd-kosten-monatlich
 const sections = [
-  { id: 'monatliche-kosten', title: 'Wie viel kostet ein Pferd im Monat?' },
   { id: 'anschaffungskosten', title: 'Anschaffungskosten eines Pferdes' },
   { id: 'pferd-preis-nach-rasse', title: 'Pferdepreise nach Rasse' },
-  { id: 'pferdehaltung-kosten-monatlich', title: 'Pferdehaltungskosten monatlich: Komplette Kostenübersicht' },
-  { id: 'jaehrliche-kosten', title: 'Pferdekosten jährlich: Jährliche Fixkosten im Detail' },
+  { id: 'monatliche-kosten', title: 'Laufende Kosten im Überblick' },
+  { id: 'jaehrliche-kosten', title: 'Jährliche Fixkosten im Detail' },
   { id: 'versteckte-kosten', title: 'Versteckte Kosten, die oft vergessen werden' },
   { id: 'budget-szenarien', title: 'Budget-Szenarien: 3 realistische Beispiele' },
   { id: 'regionale-unterschiede', title: 'Regionale Preisunterschiede für Pferde in Deutschland' },
@@ -95,31 +95,31 @@ const SECONDARY_CTA = {
 // SEO Locale Content for RatgeberHead
 const seoLocales = {
   de: {
-    title: 'Pferde Kosten Tabelle 2025: 300-900€/Monat - Kompletter Überblick',
-    description: 'Pferd Kosten 2025: Monatlich 300-900€, Anschaffung 2.500-20.000€. Komplette Tabellen mit Rasse-Vergleich & Budget-Szenarien.',
-    keywords: 'was kostet ein pferd, pferd kosten, pferd preis, pferd kosten monatlich, pferd kosten tabelle, pferdehaltung kosten, pferd anschaffungskosten',
-    ogTitle: 'Pferde Kosten Tabelle 2025: 300-900€/Monat - Kompletter Überblick',
-    ogDescription: 'Pferd Kosten 2025: Komplette Tabellen mit allen Ausgaben! Monatlich (300-900€), Anschaffung (2.500-20.000€), Rasse-Vergleich, Regional-Unterschiede, 3 Budget-Szenarien.',
-    twitterTitle: 'Pferde Kosten Tabelle 2025: 300-900€/Monat',
-    twitterDescription: 'Komplette Tabellen! Monatlich (300-900€), Anschaffung (2.500-20.000€), Rasse-Vergleich, Regional-Unterschiede, Budget-Szenarien.',
+    title: 'Was kostet ein Pferd? Alle Kosten 2025 im Überblick',
+    description: 'Pferdekosten 2025: Monatlich 300-900€, Anschaffung 2.500-20.000€. Komplette Kostenübersicht mit Rasse-Vergleich & Budget-Szenarien.',
+    keywords: 'was kostet ein pferd, pferdekosten, pferd preis, pferdekosten monatlich, pferdehaltung kosten, pferd anschaffungskosten',
+    ogTitle: 'Was kostet ein Pferd? Alle Kosten 2025 im Überblick',
+    ogDescription: 'Pferdekosten 2025: Komplette Übersicht aller Ausgaben! Monatlich (300-900€), Anschaffung (2.500-20.000€), Rasse-Vergleich, regionale Unterschiede und 3 Budget-Szenarien.',
+    twitterTitle: 'Was kostet ein Pferd? Kosten 2025 im Überblick',
+    twitterDescription: 'Komplette Kostenübersicht! Monatlich (300-900€), Anschaffung (2.500-20.000€), Rasse-Vergleich, regionale Unterschiede.',
   },
   at: {
-    title: 'Pferde Kosten Tabelle Österreich 2025: 350-900€/Monat - Alle Ausgaben',
-    description: 'Pferd Kosten Österreich 2025: Komplette Tabellen! ✓ Monatlich (350-900€) ✓ Anschaffung (3.000-22.000€) ✓ Rasse-Vergleich ✓ Regional-Unterschiede ✓ 3 Budget-Szenarien. Jetzt informieren!',
-    keywords: 'was kostet ein pferd österreich, pferd kosten österreich, pferd preis, pferdehaltung kosten, pferd anschaffungskosten',
-    ogTitle: 'Pferde Kosten Tabelle Österreich 2025: 350-900€/Monat',
-    ogDescription: 'Pferd Kosten Österreich 2025: Komplette Tabellen! Monatlich (350-900€), Anschaffung (3.000-22.000€), Rasse-Vergleich, Regional-Unterschiede, Budget-Szenarien.',
-    twitterTitle: 'Pferde Kosten Tabelle Österreich 2025: 350-900€/Monat',
-    twitterDescription: 'Komplette Tabellen! Monatlich (350-900€), Anschaffung (3.000-22.000€), Rasse-Vergleich, Regional-Unterschiede, Budget-Szenarien.',
+    title: 'Was kostet ein Pferd in Österreich? Alle Kosten 2025',
+    description: 'Pferdekosten Österreich 2025: Monatlich 350-900€, Anschaffung 3.000-22.000€. Rasse-Vergleich, regionale Unterschiede und 3 Budget-Szenarien.',
+    keywords: 'was kostet ein pferd österreich, pferdekosten österreich, pferd preis, pferdehaltung kosten, pferd anschaffungskosten',
+    ogTitle: 'Was kostet ein Pferd in Österreich? Kosten 2025',
+    ogDescription: 'Pferdekosten Österreich 2025: Monatlich (350-900€), Anschaffung (3.000-22.000€), Rasse-Vergleich, regionale Unterschiede und Budget-Szenarien.',
+    twitterTitle: 'Was kostet ein Pferd in Österreich? 2025',
+    twitterDescription: 'Kostenübersicht! Monatlich (350-900€), Anschaffung (3.000-22.000€), Rasse-Vergleich, regionale Unterschiede.',
   },
   ch: {
-    title: 'Pferde Kosten Tabelle Schweiz 2025: 400-1.000 CHF/Monat - Alle Ausgaben',
-    description: 'Pferd Kosten Schweiz 2025: Komplette Tabellen! ✓ Monatlich (400-1.000 CHF) ✓ Anschaffung (3.500-25.000 CHF) ✓ Rasse-Vergleich ✓ Regional-Unterschiede ✓ 3 Budget-Szenarien. Jetzt informieren!',
-    keywords: 'was kostet ein pferd schweiz, pferd kosten schweiz, pferd preis, pferdehaltung kosten, pferd anschaffungskosten',
-    ogTitle: 'Pferde Kosten Tabelle Schweiz 2025: 400-1.000 CHF/Monat',
-    ogDescription: 'Pferd Kosten Schweiz 2025: Komplette Tabellen! Monatlich (400-1.000 CHF), Anschaffung (3.500-25.000 CHF), Rasse-Vergleich, Regional-Unterschiede, Budget-Szenarien.',
-    twitterTitle: 'Pferde Kosten Tabelle Schweiz 2025: 400-1.000 CHF/Monat',
-    twitterDescription: 'Komplette Tabellen! Monatlich (400-1.000 CHF), Anschaffung (3.500-25.000 CHF), Rasse-Vergleich, Regional-Unterschiede, Budget-Szenarien.',
+    title: 'Was kostet ein Pferd in der Schweiz? Alle Kosten 2025',
+    description: 'Pferdekosten Schweiz 2025: Monatlich 400-1.000 CHF, Anschaffung 3.500-25.000 CHF. Rasse-Vergleich, regionale Unterschiede und 3 Budget-Szenarien.',
+    keywords: 'was kostet ein pferd schweiz, pferdekosten schweiz, pferd preis, pferdehaltung kosten, pferd anschaffungskosten',
+    ogTitle: 'Was kostet ein Pferd in der Schweiz? Kosten 2025',
+    ogDescription: 'Pferdekosten Schweiz 2025: Monatlich (400-1.000 CHF), Anschaffung (3.500-25.000 CHF), Rasse-Vergleich, regionale Unterschiede und Budget-Szenarien.',
+    twitterTitle: 'Was kostet ein Pferd in der Schweiz? 2025',
+    twitterDescription: 'Kostenübersicht! Monatlich (400-1.000 CHF), Anschaffung (3.500-25.000 CHF), Rasse-Vergleich, regionale Unterschiede.',
   },
 }
 
@@ -188,9 +188,6 @@ export default function WasKostetEinPferd() {
           <RatgeberTableOfContents sections={sections} />
         </section>
 
-        {/* Community Survey - Direkt nach Inhaltsverzeichnis für maximale Aufmerksamkeit */}
-        <SurveyBox survey={monthlyCostsSurvey} allowVoting={true} />
-
         {/* Featured Snippet Box: Pferdekosten auf einen Blick */}
         <RatgeberHighlightBox
           title="Pferdekosten auf einen Blick"
@@ -218,87 +215,34 @@ export default function WasKostetEinPferd() {
           </div>
         </RatgeberHighlightBox>
 
-        {/* Featured Snippet Section: Monatliche Kosten */}
+        {/* Brief Monthly Costs Overview - Details in separate article */}
         <section id="monatliche-kosten" className="scroll-mt-32 lg:scroll-mt-40">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-            Wie viel kostet ein Pferd im Monat?
+            Laufende Kosten im Überblick
           </h2>
 
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            Die monatlichen Kosten für ein Pferd liegen zwischen <strong>300€ und 900€</strong>, abhängig von Haltungsform und Region. Im Durchschnitt solltest du mit <strong>500-600€ monatlich</strong> rechnen. Diese Kosten decken die Grundversorgung ab – Notfälle und Zusatzleistungen kommen extra hinzu.
+            Die monatlichen Kosten für ein Pferd liegen zwischen <strong>300€ und 900€</strong>, abhängig von Haltungsform und Region. Im Durchschnitt solltest du mit <strong>500-600€ monatlich</strong> rechnen. Die größten Kostenpunkte sind Stallmiete (200-600€), Hufschmied (40-150€), Tierarzt (30-60€) und Versicherungen (30-80€).
           </p>
 
-          <div className="overflow-x-auto mb-6">
-            <table className="w-full border-collapse border border-gray-300">
-              <thead>
-                <tr className="bg-brand-brown-light">
-                  <th className="border border-gray-300 px-4 py-3 text-left font-semibold text-gray-900">
-                    Kostenart
-                  </th>
-                  <th className="border border-gray-300 px-4 py-3 text-right font-semibold text-gray-900">
-                    Monatlich
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td className="border border-gray-300 px-4 py-3 text-gray-700">
-                    Stallmiete (Offenstall)
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-right text-gray-700">
-                    200-350 €
-                  </td>
-                </tr>
-                <tr className="bg-gray-50">
-                  <td className="border border-gray-300 px-4 py-3 text-gray-700">
-                    Stallmiete (Box)
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-right text-gray-700">
-                    300-600 €
-                  </td>
-                </tr>
-                <tr>
-                  <td className="border border-gray-300 px-4 py-3 text-gray-700">
-                    Futter & Heu
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-right text-gray-700">
-                    50-100 €
-                  </td>
-                </tr>
-                <tr className="bg-gray-50">
-                  <td className="border border-gray-300 px-4 py-3 text-gray-700">
-                    Hufschmied (alle 6-8 Wochen)
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-right text-gray-700">
-                    40-100 €
-                  </td>
-                </tr>
-                <tr>
-                  <td className="border border-gray-300 px-4 py-3 text-gray-700">
-                    Versicherung (Haftpflicht + OP)
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-right text-gray-700">
-                    30-80 €
-                  </td>
-                </tr>
-                <tr>
-                  <td className="border border-gray-300 px-4 py-3 text-gray-700">
-                    Tierarzt (Basis-Vorsorge)
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-right text-gray-700">
-                    30-60 €
-                  </td>
-                </tr>
-                <tr className="bg-brand-brown-light">
-                  <td className="border border-gray-300 px-4 py-3 font-bold text-gray-900">
-                    Gesamt (Durchschnitt)
-                  </td>
-                  <td className="border border-gray-300 px-4 py-3 text-right font-bold text-brand-brown">
-                    300-900 €
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+          {/* Prominent CTA to detailed article */}
+          <div className="bg-gradient-to-r from-primary-50 to-primary-100 border-2 border-primary-300 rounded-xl p-6 mb-8">
+            <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+              <div>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">
+                  Detaillierte Aufschlüsselung der monatlichen Kosten
+                </h3>
+                <p className="text-gray-700">
+                  In unserem umfassenden Ratgeber erfährst du alles über Stallmiete, Futter, Hufpflege, Tierarzt und Versicherungen – mit Budget-Szenarien und Spartipps.
+                </p>
+              </div>
+              <LocalizedLink
+                href="/pferde-ratgeber/pferd-kosten-monatlich"
+                className="inline-flex items-center justify-center px-6 py-3 bg-primary-600 text-white font-semibold rounded-lg hover:bg-primary-700 transition-colors whitespace-nowrap"
+              >
+                Zum Kosten-Ratgeber
+              </LocalizedLink>
+            </div>
           </div>
 
           <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-8">
@@ -312,42 +256,6 @@ export default function WasKostetEinPferd() {
                 </p>
               </div>
             </div>
-          </div>
-
-          {/* E-E-A-T: Real-Life Kostenbeispiel aus eigener Erfahrung */}
-          <div className="bg-gradient-to-br from-blue-50 to-indigo-50 border-l-4 border-blue-600 p-6 my-8 rounded-r-lg shadow-sm">
-            <h4 className="font-bold text-gray-900 text-lg mb-4 flex items-center gap-2">
-              <span className="bg-blue-600 text-white text-xs px-2 py-1 rounded">PRAXIS-BEISPIEL</span>
-              Unsere monatlichen Kosten für Blossi (Stuttgart)
-            </h4>
-
-            <p className="text-sm text-gray-600 mb-4">
-              6-jährige Stute (Deutsches Sportpferd), L-Dressur in Ausbildung, Boxenhaltung mit Vollpension, Stand Dezember 2025
-            </p>
-
-            <div className="space-y-2 text-sm mb-4">
-              <div className="flex justify-between border-b border-gray-200 pb-1">
-                <span>Vollpension (inkl. Box, Futter, Weide, moderne Halle + Außenplatz)</span>
-                <span className="font-bold">550€</span>
-              </div>
-              <div className="flex justify-between border-b border-gray-200 pb-1">
-                <span>Hufschmied (alle 8 Wochen, ~150€/Termin)</span>
-                <span className="font-bold">~75€</span>
-              </div>
-              <div className="flex justify-between border-b border-gray-200 pb-1">
-                <span>Reitunterricht (3x/Woche) + Beritt (1x/Woche)</span>
-                <span className="font-bold">250-350€</span>
-              </div>
-              <div className="flex justify-between pt-2 border-t-2 border-blue-600">
-                <span className="font-bold">Monatliche Kosten gesamt</span>
-                <span className="font-bold text-blue-700 text-lg">&gt;800€</span>
-              </div>
-            </div>
-
-            <p className="text-xs text-gray-500 italic">
-              Diese Kosten entsprechen dem, was laut unserer Community-Umfrage 30% aller Pferdebesitzer monatlich ausgeben.
-              Nicht enthalten: Tierarzt-Notfälle, Versicherungen, Equipment-Ersatz.
-            </p>
           </div>
         </section>
 
@@ -598,7 +506,7 @@ export default function WasKostetEinPferd() {
             {/* Warmblut Preise */}
             <h3 className="text-2xl font-bold text-gray-900 mb-6 mt-12">Warmblut</h3>
             <p className="text-lg text-gray-700 mb-6">
-              Deutsche Warmblüter (z.B. Hannoveraner, Oldenburger, Westfalen) sind vielseitige Sport- und Freizeitpferde mit breiter Preisrange je nach Qualität und Ausbildung.
+              Deutsche Warmblüter (z.B. Hannoveraner, Oldenburger, Westfalen) sind vielseitige Sport- und Freizeitpferde mit breiter Preisspanne je nach Qualität und Ausbildung.
             </p>
 
             <div className="mb-12">
@@ -777,342 +685,10 @@ export default function WasKostetEinPferd() {
             </RatgeberHighlightBox>
           </section>
 
-          {/* Section 3: Monatliche Kosten */}
-          <section id="pferdehaltung-kosten-monatlich" className="mb-20 scroll-mt-32 lg:scroll-mt-40">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-              Pferdehaltungskosten monatlich: Komplette Kostenübersicht
-            </h2>
-
-            <div className="prose prose-lg max-w-none mb-10">
-              <p className="text-lg text-gray-700 leading-relaxed">
-                Die <strong>Pferdehaltungskosten</strong> setzen sich aus regelmäßigen monatlichen Fixkosten zusammen, die für den Unterhalt eines Pferdes notwendig sind. Der monatliche Unterhalt eines Pferdes ist der größte laufende Posten in der Pferdehaltung. Mit den richtigen Kenntnissen über die <strong>laufenden Kosten der Pferdehaltung</strong> können Sie ein realistisches Budget für Ihre Pferdehaltung planen und versteckte Ausgaben vermeiden. Diese Ausgaben für die Pferdehaltung fallen regelmäßig an und sollten in keinem Monat unterschätzt werden.
-              </p>
-            </div>
-
-            {/* Comprehensive Monthly Cost Breakdown Table */}
-            <div className="mb-12">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">Detaillierte Übersicht: Pferdehaltungskosten pro Monat</h3>
-
-              <table className="w-full mb-8">
-                <thead>
-                  <tr className="bg-gray-100">
-                    <th className="text-left p-4 font-semibold text-gray-900">Kostenposition</th>
-                    <th className="text-left p-4 font-semibold text-gray-900">Minimum</th>
-                    <th className="text-left p-4 font-semibold text-gray-900">Maximum</th>
-                    <th className="text-left p-4 font-semibold text-gray-900">Durchschnitt</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr className="border-b border-gray-200">
-                    <td className="p-4 text-gray-900">Stallmiete & Unterbringung</td>
-                    <td className="p-4 font-bold text-brand-brown">150€</td>
-                    <td className="p-4 font-bold text-brand-brown">1.200€</td>
-                    <td className="p-4 text-gray-700">350€ - 500€</td>
-                  </tr>
-                  <tr className="border-b border-gray-200">
-                    <td className="p-4 text-gray-900">Futter & Einstreu</td>
-                    <td className="p-4 font-bold text-brand-brown">50€</td>
-                    <td className="p-4 font-bold text-brand-brown">200€</td>
-                    <td className="p-4 text-gray-700">80€ - 120€</td>
-                  </tr>
-                  <tr className="border-b border-gray-200">
-                    <td className="p-4 text-gray-900">Hufschmied (alle 6-8 Wochen)</td>
-                    <td className="p-4 font-bold text-brand-brown">40€</td>
-                    <td className="p-4 font-bold text-brand-brown">200€</td>
-                    <td className="p-4 text-gray-700">60€ - 120€</td>
-                  </tr>
-                  <tr className="border-b border-gray-200">
-                    <td className="p-4 text-gray-900">Tierarzt (Routineversorgung)</td>
-                    <td className="p-4 font-bold text-brand-brown">30€</td>
-                    <td className="p-4 font-bold text-brand-brown">150€</td>
-                    <td className="p-4 text-gray-700">50€ - 80€</td>
-                  </tr>
-                  <tr className="border-b border-gray-200">
-                    <td className="p-4 text-gray-900">Versicherungen (Haftpflicht + OP)</td>
-                    <td className="p-4 font-bold text-brand-brown">20€</td>
-                    <td className="p-4 font-bold text-brand-brown">100€</td>
-                    <td className="p-4 text-gray-700">40€ - 60€</td>
-                  </tr>
-                  <tr className="bg-blue-50 font-bold">
-                    <td className="p-4 text-gray-900">Gesamtkosten pro Monat</td>
-                    <td className="p-4 text-brand-brown">290€</td>
-                    <td className="p-4 text-brand-brown">1.850€</td>
-                    <td className="p-4 text-blue-600">580€ - 880€</td>
-                  </tr>
-                </tbody>
-              </table>
-
-              <RatgeberHighlightBox
-                title="Pferdehaltungskosten auf einen Blick"
-              >
-                Die durchschnittlichen <strong>Pferdehaltungskosten monatlich</strong> liegen bei <strong>580€ - 880€</strong> für die reguläre Pferdehaltung. Der monatliche Unterhalt eines Pferdes setzt sich aus Stallmiete, Futter, Hufpflege, Tierarzt und Versicherungen zusammen. Budget immer nach oben planen: Unvorhergesehene Tierarztkosten, Zusatzfutter im Winter oder Notfall-Hufbeschlag können die laufenden Kosten der Pferdehaltung schnell erhöhen. Eine Rücklage von mindestens 2.000€ für Notfälle ist essentiell für ein solides Budget für Ihre Pferdehaltung.
-              </RatgeberHighlightBox>
-            </div>
-
-            {/* Stallmiete und Unterbringung - Converted to semantic comparison table */}
-            <h3 className="text-2xl font-bold text-gray-900 mb-6">Stallmiete und Unterbringung</h3>
-
-            <div className="prose prose-lg max-w-none mb-6">
-              <p className="text-lg text-gray-700 leading-relaxed">
-                Die Stallmiete ist häufig der größte Kostenfaktor in der Pferdehaltung. Die genaue Höhe der Pferdehaltungskosten für die Unterbringung hängt stark von der gewählten Haltungsform ab. Ob Offenstall, Boxenhaltung oder Vollpension – jede Form hat unterschiedliche Auswirkungen auf Ihr Budget für Ihre Pferdehaltung.
-              </p>
-            </div>
-
-            <div className="mb-12">
-              <table className="w-full mb-8">
-                <thead>
-                  <tr className="border-b-2 border-gray-300">
-                    <th className="text-left py-3 px-4 text-lg font-bold text-gray-900">Haltungsform</th>
-                    <th className="text-left py-3 px-4 text-lg font-bold text-gray-900">Preisspanne</th>
-                    <th className="text-left py-3 px-4 text-lg font-bold text-gray-900">Details</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr className="border-b border-gray-200">
-                    <td className="py-4 px-4 align-top">
-                      <p className="text-xl font-bold text-brand-brown mb-2">Offenstallhaltung</p>
-                    </td>
-                    <td className="py-4 px-4 align-top">
-                      <p className="text-xl font-bold text-brand-brown">150€ - 350€/Monat</p>
-                    </td>
-                    <td className="py-4 px-4 align-top">
-                      <div className="space-y-2 text-lg text-gray-700">
-                        <p><strong className="text-green-700">Vorteile:</strong> Natürliche Sozialkontakte, viel Bewegung, artgerechte Haltung</p>
-                        <p><strong className="text-red-700">Nachteile:</strong> Weniger Kontrolle über Fütterung, Witterungseinflüsse</p>
-                        <p className="text-gray-600"><strong>Ideal für:</strong> Robuste Rassen, Freizeitpferde</p>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr className="border-b border-gray-200">
-                    <td className="py-4 px-4 align-top">
-                      <p className="text-xl font-bold text-brand-brown mb-2">Boxenhaltung</p>
-                    </td>
-                    <td className="py-4 px-4 align-top">
-                      <p className="text-xl font-bold text-brand-brown">250€ - 600€/Monat</p>
-                    </td>
-                    <td className="py-4 px-4 align-top">
-                      <div className="space-y-2 text-lg text-gray-700">
-                        <p><strong className="text-green-700">Vorteile:</strong> Individuelle Fütterung, geschützte Umgebung, bessere Kontrolle</p>
-                        <p><strong className="text-red-700">Nachteile:</strong> Weniger Bewegung, höhere Kosten, weniger Sozialkontakte</p>
-                        <p className="text-gray-600"><strong>Ideal für:</strong> Sportpferde, empfindliche Pferde</p>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="py-4 px-4 align-top">
-                      <p className="text-xl font-bold text-brand-brown mb-2">Vollpension-Plus (mit Beritt)</p>
-                    </td>
-                    <td className="py-4 px-4 align-top">
-                      <p className="text-xl font-bold text-brand-brown">450€ - 1.200€+/Monat</p>
-                    </td>
-                    <td className="py-4 px-4 align-top">
-                      <div className="space-y-2 text-lg text-gray-700">
-                        <p><strong>Inkludiert:</strong> Stallmiete, Futter, Pflege, professionelles Training</p>
-                        <p><strong className="text-green-700">Vorteile:</strong> Professionelle Ausbildung, weniger Eigenaufwand</p>
-                        <p className="text-gray-600"><strong>Ideal für:</strong> Berufstätige mit wenig Zeit, Jungpferdeausbildung</p>
-                      </div>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-
-            {/* Futter und Einstreu - Semantic table structure */}
-            <h3 className="text-2xl font-bold text-gray-900 mb-6">Futter und Einstreu</h3>
-
-            <div className="prose prose-lg max-w-none mb-6">
-              <p className="text-lg text-gray-700 leading-relaxed">
-                Neben der Stallmiete macht das Futter einen großen Teil der laufenden Kosten der Pferdehaltung aus. Die Futterausgaben variieren je nach Pferdetyp, Jahreszeit und Aktivitätsniveau. Eine realistische Planung dieser Pferdehaltungskosten ist für Ihr Budget essentiell.
-              </p>
-            </div>
-
-            <div className="mb-12">
-              <div className="space-y-6">
-                <div>
-                  <h4 className="text-xl font-bold text-gray-900 mb-3">Grundfutter (Heu, Stroh)</h4>
-                  <ul className="space-y-2 text-lg text-gray-700">
-                    <li>• Heu: 40€ - 80€/Monat (abhängig von Region und Qualität)</li>
-                    <li>• Stroh (als Einstreu): 30€ - 60€/Monat</li>
-                    <li>• Alternative Einstreu (Späne, Pellets): 40€ - 100€/Monat</li>
-                  </ul>
-                </div>
-
-                <div>
-                  <h4 className="text-xl font-bold text-gray-900 mb-3">Kraftfutter</h4>
-                  <ul className="space-y-2 text-lg text-gray-700">
-                    <li>• Grundversorgung: 30€ - 80€/Monat</li>
-                    <li>• Sportpferd (intensives Training): 80€ - 150€/Monat</li>
-                    <li>• Senior-Pferd (Spezialfutter): 60€ - 120€/Monat</li>
-                  </ul>
-                </div>
-
-                <div>
-                  <h4 className="text-xl font-bold text-gray-900 mb-3">Zusatzfutter und Mineralien</h4>
-                  <ul className="space-y-2 text-lg text-gray-700">
-                    <li>• Mineralfutter: 15€ - 40€/Monat</li>
-                    <li>• Öle (z.B. Leinöl): 10€ - 25€/Monat</li>
-                    <li>• Kräuter/Ergänzungen: 15€ - 50€/Monat</li>
-                  </ul>
-                </div>
-
-                <div className="pt-4 border-t-2 border-gray-300">
-                  <p className="text-xl font-bold text-gray-900">
-                    Gesamtkosten Futter und Einstreu: <span className="text-brand-brown">100€ - 300€/Monat</span>
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* Hufpflege - Semantic comparison table */}
-            <h3 className="text-2xl font-bold text-gray-900 mb-6">Hufpflege</h3>
-
-            <div className="prose prose-lg max-w-none mb-6">
-              <p className="text-lg text-gray-700 leading-relaxed">
-                Die regelmäßige Hufpflege ist ein unverzichtbarer Teil der Pferdehaltungskosten und des monatlichen Unterhalts eines Pferdes. Diese Kosten für den Hufschmied oder die Hufpflege fallen regelmäßig an und sollten nicht in Ihrem Budget für Ihre Pferdehaltung unterschätzt werden.
-              </p>
-            </div>
-
-            <div className="mb-12">
-              <table className="w-full mb-8">
-                <thead>
-                  <tr className="border-b-2 border-gray-300">
-                    <th className="text-left py-3 px-4 text-lg font-bold text-gray-900">Pflegeart</th>
-                    <th className="text-left py-3 px-4 text-lg font-bold text-gray-900">Details</th>
-                    <th className="text-right py-3 px-4 text-lg font-bold text-gray-900">Monatliche Kosten</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr className="border-b border-gray-200">
-                    <td className="py-4 px-4 align-top">
-                      <p className="text-xl font-bold text-brand-brown">Barhuf-Pflege</p>
-                    </td>
-                    <td className="py-4 px-4 align-top">
-                      <ul className="space-y-2 text-lg text-gray-700">
-                        <li>• Preis: 30€ - 50€ pro Termin</li>
-                        <li>• Intervall: Alle 6-8 Wochen</li>
-                      </ul>
-                    </td>
-                    <td className="py-4 px-4 align-top text-right">
-                      <p className="text-xl font-bold text-brand-brown">~40€/Monat</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="py-4 px-4 align-top">
-                      <p className="text-xl font-bold text-brand-brown">Hufbeschlag</p>
-                    </td>
-                    <td className="py-4 px-4 align-top">
-                      <ul className="space-y-2 text-lg text-gray-700">
-                        <li>• Einfacher Beschlag: 80€ - 120€ pro Termin</li>
-                        <li>• Spezialbeschlag (orthopädisch): 120€ - 200€ pro Termin</li>
-                        <li>• Intervall: Alle 6-8 Wochen</li>
-                      </ul>
-                    </td>
-                    <td className="py-4 px-4 align-top text-right">
-                      <p className="text-xl font-bold text-brand-brown">80€ - 150€/Monat</p>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-
-            <RatgeberHighlightBox
-              title="Wichtiger Hinweis"
-              icon={SHIELD_ALERT_ICON}
-            >
-              <p className="text-base text-gray-700 leading-relaxed">
-                Regelmäßige Hufpflege ist keine optionale Ausgabe. Vernachlässigte Hufe führen zu schwerwiegenden gesundheitlichen Problemen, die langfristig deutlich teurer werden (Hufgeschwüre, Fehlstellungen, Lahmheiten).
-              </p>
-            </RatgeberHighlightBox>
-
-            {/* Tierarztkosten (Basisversorgung) - Semantic list structure */}
-            <div className="mt-12">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">Tierarztkosten (Basisversorgung)</h3>
-
-              <div className="prose prose-lg max-w-none mb-6">
-                <p className="text-lg text-gray-700 leading-relaxed">
-                  Die Tierarztkosten für die Grundversorgung sind ein fester Bestandteil der laufenden Kosten der Pferdehaltung. Diese Ausgaben sind notwendig für die Gesundheit und das Wohlbefinden Ihres Pferdes und sollten in keinem realistischen Budget für Ihre Pferdehaltung fehlen.
-                </p>
-              </div>
-
-              <div className="space-y-3 mb-8">
-                <div className="flex justify-between items-center pb-2 border-b border-gray-200">
-                  <span className="text-lg text-gray-700">Routineimpfungen (Tetanus, Influenza, Herpes)</span>
-                  <span className="font-bold text-lg text-brand-brown">~10€/Monat</span>
-                </div>
-                <div className="flex justify-between items-center pb-2 border-b border-gray-200">
-                  <span className="text-lg text-gray-700">Entwurmung (2-4x pro Jahr nach Kotproben)</span>
-                  <span className="font-bold text-lg text-brand-brown">~8€/Monat</span>
-                </div>
-                <div className="flex justify-between items-center pb-2 border-b border-gray-200">
-                  <span className="text-lg text-gray-700">Zahnkontrolle (jährlich)</span>
-                  <span className="font-bold text-lg text-brand-brown">~10€/Monat</span>
-                </div>
-                <div className="pt-4 border-t-2 border-gray-300">
-                  <p className="text-xl font-bold text-gray-900">
-                    Durchschnittliche monatliche Tierarzt-Grundkosten: <span className="text-brand-brown">30€ - 50€/Monat</span>
-                  </p>
-                </div>
-              </div>
-
-              <RatgeberHighlightBox
-                title="WICHTIG"
-                icon={SHIELD_ALERT_ICON}
-              >
-                <p className="text-base text-gray-700 leading-relaxed">
-                  Diese Kosten decken NUR die Grundversorgung. Notfälle, Verletzungen oder chronische Erkrankungen sind hier NICHT enthalten und können schnell mehrere Tausend Euro kosten.
-                </p>
-              </RatgeberHighlightBox>
-            </div>
-
-            {/* Versicherungen - Semantic structure with importance indicators */}
-            <div className="mt-12">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">Versicherungen</h3>
-
-              <div className="prose prose-lg max-w-none mb-6">
-                <p className="text-lg text-gray-700 leading-relaxed">
-                  Versicherungen sind ein wichtiger Teil der Pferdehaltungskosten und des monatlichen Unterhalts eines Pferdes. Diese Ausgaben schützen Sie vor unerwarteten finanziellen Belastungen und sollten in Ihrem Budget für Ihre Pferdehaltung berücksichtigt werden. Die laufenden Kosten der Pferdehaltung für Versicherungen variieren je nach Leistungsumfang.
-                </p>
-              </div>
-
-              <div className="space-y-6 mb-8">
-                <div>
-                  <h4 className="text-xl font-bold text-red-700 mb-3">Haftpflichtversicherung (obligatorisch!)</h4>
-                  <div className="space-y-2 text-lg text-gray-700 pl-4 border-l-4 border-red-500">
-                    <p><strong>Kosten:</strong> 60€ - 120€/Jahr (umgerechnet ~8€/Monat)</p>
-                    <p><strong>Deckt ab:</strong> Schäden, die das Pferd Dritten zufügt (z.B. Autounfall)</p>
-                  </div>
-                </div>
-
-                <div>
-                  <h4 className="text-xl font-bold text-amber-700 mb-3">Pferde-OP-Versicherung (dringend empfohlen)</h4>
-                  <div className="space-y-2 text-lg text-gray-700 pl-4 border-l-4 border-amber-500">
-                    <p><strong>Kosten:</strong> 150€ - 400€/Jahr (umgerechnet 15€ - 35€/Monat)</p>
-                    <p><strong>Deckt ab:</strong> Operationskosten bis zu 10.000€ - 25.000€</p>
-                    <p><strong>Beispiele:</strong> Kolik-OP (3.000€ - 8.000€), Fraktur-OP (5.000€ - 15.000€)</p>
-                  </div>
-                </div>
-
-                <div>
-                  <h4 className="text-xl font-bold text-gray-900 mb-3">Pferdekrankenversicherung (optional)</h4>
-                  <div className="space-y-2 text-lg text-gray-700 pl-4 border-l-4 border-gray-300">
-                    <p><strong>Kosten:</strong> 400€ - 1.200€/Jahr (umgerechnet 35€ - 100€/Monat)</p>
-                    <p><strong>Deckt ab:</strong> Auch kleinere Tierarztbehandlungen</p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="pt-4 border-t-2 border-gray-300">
-                <p className="text-xl font-bold text-gray-900">
-                  Monatliche Versicherungskosten gesamt: <span className="text-brand-brown">25€ - 145€/Monat</span>
-                </p>
-              </div>
-            </div>
-          </section>
-
-          {/* Section 3: Jährliche Fixkosten */}
+          {/* Section: Jährliche Fixkosten */}
           <section id="jaehrliche-kosten" className="mb-20 scroll-mt-32 lg:scroll-mt-40">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-              Pferdekosten jährlich: Jährliche Fixkosten im Detail
+              Jährliche Fixkosten im Detail
             </h2>
 
             <div className="prose prose-lg max-w-none mb-10">

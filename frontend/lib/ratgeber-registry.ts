@@ -114,9 +114,25 @@ export const RATGEBER_ENTRIES: RatgeberEntry[] = [
     priority: '0.7',
     changefreq: 'monthly',
     relatedSlugs: [
-      'quarter-horse',
-      'friese',
-      'islandpferd'
+      'pferd-kosten-monatlich',
+      'aku-pferd',
+      '' // Hub-Seite /pferd-kaufen/
+    ]
+  },
+  // Monatliche Kosten - Informational Content
+  {
+    slug: 'pferd-kosten-monatlich',
+    title: 'Was kostet ein Pferd im Monat?',
+    description: 'Realistische monatliche Pferdekosten 2025: Stallmiete, Futter, Hufschmied, Tierarzt, Versicherung. Mit Budget-Szenarien und Spartipps.',
+    category: 'Finanzen & Recht',
+    readTime: '12 Min.',
+    image: '/images/ratgeber/pferd-kaufen/was-kostet-ein-pferd/horse-chestnut-eating-hay-stable-window.webp',
+    priority: '0.7',
+    changefreq: 'monthly',
+    relatedSlugs: [
+      'was-kostet-ein-pferd',
+      '', // Hub-Seite /pferd-kaufen/
+      'aku-pferd'
     ]
   },
   // Spoke: /pferd-kaufen/freizeitpferd

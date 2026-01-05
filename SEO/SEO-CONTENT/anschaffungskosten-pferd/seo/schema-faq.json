@@ -1,0 +1,46 @@
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Wie viel kostet das billigste Pferd?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Das guenstigste Pferd kostet 500-2.000 EUR. Meist sind es aeltere Pferde ab 15 Jahren oder solche mit kleineren gesundheitlichen Einschraenkungen. Achtung: Eine AKU ist bei guenstigen Pferden besonders wichtig. Versteckte Gesundheitsprobleme koennen schnell 2.000-8.000 EUR Tierarztkosten verursachen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Was kostet ein 10 Jahre altes Pferd?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ein 10-jaehriges Pferd kostet je nach Rasse 3.000-15.000 EUR. Pferde in diesem Alter sind oft die beste Wahl. Sie sind voll ausgebildet und haben noch 10-15 gute Jahre vor sich. Der Preis haengt stark vom Ausbildungsstand ab. Ein 10-jaehriger Wallach mit L-Dressur kostet deutlich mehr als ein gleichaltriger ohne Turniererfahrung."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Was kostet ein normales Freizeitpferd?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ein Freizeitpferd kostet in der Anschaffung 2.500-8.000 EUR. Dazu kommen AKU (200-600 EUR), Erstausstattung (1.000-2.500 EUR) und versteckte Kosten (500-1.500 EUR). Gesamt: Rechne mit 4.500-12.500 EUR fuer ein normales Freizeitpferd inklusive allem."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Lohnt sich ein junges Pferd fuer Anfaenger?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Fuer Anfaenger empfehlen wir kein Jungpferd unter 5 Jahren. Junge Pferde sind zwar guenstiger, aber es kommen Ausbildungskosten von 5.000-15.000 EUR hinzu. Der Zeitaufwand betraegt 2-3 Jahre bis zur Reitbarkeit, und unerfahrene Reiter ueberfordern sich oft. Ein gut ausgebildetes 8-12 jaehriges Pferd ist langfristig die bessere Wahl."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Was kostet die AKU beim Pferdekauf?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Die Ankaufsuntersuchung (AKU) kostet 200-1.500 EUR. Kleine AKU (Basis): 200-350 EUR. Grosse AKU (Standard): 400-600 EUR. Mit Roentgen: 600-1.000 EUR. Fuer teure Pferde empfehlen wir die erweiterte AKU mit Roentgen. Sie schuetzt vor teuren Ueberraschungen."
+      }
+    }
+  ]
+}

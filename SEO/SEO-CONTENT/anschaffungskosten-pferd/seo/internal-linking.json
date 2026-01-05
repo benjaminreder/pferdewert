@@ -1,0 +1,87 @@
+{
+  "phase": "5C",
+  "total_internal_links": 7,
+  "validated_against_sitemap": true,
+  "internal_links": [
+    {
+      "section": "Einleitung",
+      "anchor_text": "monatliche Kosten fuer ein Pferd",
+      "target_url": "/pferde-ratgeber/pferd-kosten-monatlich",
+      "context": "Dieser Ratgeber behandelt nur die einmaligen Anschaffungskosten. Fuer die laufenden Ausgaben wie Stallmiete und Futter haben wir einen eigenen Artikel: [monatliche Kosten fuer ein Pferd].",
+      "relevance": "high",
+      "exists_in_codebase": false,
+      "note": "Page needs to be created - natural continuation of acquisition costs article"
+    },
+    {
+      "section": "Kaufpreise nach Pferdetyp",
+      "anchor_text": "Freizeitpferd kaufen",
+      "target_url": "/pferd-kaufen/freizeitpferd",
+      "context": "Wenn du ein [Freizeitpferd kaufen] moechtest, liegst du meist im unteren Bereich.",
+      "relevance": "high",
+      "exists_in_codebase": true
+    },
+    {
+      "section": "AKU-Kosten",
+      "anchor_text": "AKU-Ratgeber",
+      "target_url": "/pferde-ratgeber/aku-pferd",
+      "context": "Mehr Details zu den einzelnen Untersuchungsschritten findest du in unserem [AKU-Ratgeber].",
+      "relevance": "high",
+      "exists_in_codebase": true
+    },
+    {
+      "section": "Fazit",
+      "anchor_text": "monatlichen Kosten",
+      "target_url": "/pferde-ratgeber/pferd-kosten-monatlich",
+      "context": "Die [monatlichen Kosten] liegen bei 300-800 EUR pro Monat. Plane langfristig.",
+      "relevance": "high",
+      "exists_in_codebase": false,
+      "note": "Reinforcement link to monthly costs article"
+    },
+    {
+      "section": "Fazit/CTA",
+      "anchor_text": "Jetzt Pferdewert berechnen",
+      "target_url": "/pferde-preis-berechnen",
+      "context": "Du moechtest wissen, was dein Traumpferd wert ist? Mit unserem KI-Bewertungstool erhaeltst du in 2 Minuten eine realistische Preiseinschaetzung. [Jetzt Pferdewert berechnen]",
+      "relevance": "high",
+      "exists_in_codebase": true,
+      "note": "Primary service CTA - essential for conversion"
+    },
+    {
+      "section": "Fazit",
+      "anchor_text": "Pferdekauf",
+      "target_url": "/pferd-kaufen/",
+      "context": "Wir wuenschen dir viel Erfolg bei deinem [Pferdekauf]!",
+      "relevance": "medium",
+      "exists_in_codebase": true,
+      "note": "Link to commercial cluster hub"
+    },
+    {
+      "section": "Rasse-Preise Haflinger",
+      "anchor_text": "Haflinger kaufen",
+      "target_url": "/pferd-kaufen/haflinger",
+      "context": "Mehr Informationen zum [Haflinger kaufen] findest du in unserem speziellen Ratgeber.",
+      "relevance": "medium",
+      "exists_in_codebase": true,
+      "note": "Breed-specific deep link"
+    }
+  ],
+  "link_summary": {
+    "existing_pages": 5,
+    "pages_to_create": 2,
+    "high_relevance": 5,
+    "medium_relevance": 2,
+    "primary_service_cta": true
+  },
+  "recommendations": [
+    {
+      "priority": "high",
+      "action": "Create /pferde-ratgeber/pferd-kosten-monatlich page",
+      "reason": "Natural continuation - acquisition costs lead to monthly costs questions"
+    },
+    {
+      "priority": "medium",
+      "action": "Consider adding link to /pferd-kaufen/anfaenger for beginner recommendations",
+      "reason": "Article mentions beginner context multiple times"
+    }
+  ]
+}

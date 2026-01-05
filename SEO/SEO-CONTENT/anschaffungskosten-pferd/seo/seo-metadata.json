@@ -1,0 +1,110 @@
+{
+  "phase": "5A",
+  "primary_keyword": "was kostet ein pferd",
+  "slug": "anschaffungskosten-pferd",
+  "timestamp": "2026-01-03T14:30:00Z",
+  "de": {
+    "metadata": {
+      "title": "Was kostet ein Pferd? Anschaffungskosten 2025 [Preistabelle]",
+      "description": "Was kostet ein Pferd? Kaufpreise nach Pferdetyp, AKU-Kosten, Erstausstattung und versteckte Nebenkosten. Erfahre die echten Anschaffungskosten 2025.",
+      "canonical_url": "https://pferdewert.de/pferde-ratgeber/anschaffungskosten-pferd",
+      "robots": "index, follow",
+      "locale": "de_DE"
+    },
+    "open_graph": {
+      "title": "Was kostet ein Pferd? Anschaffungskosten 2025",
+      "description": "Kaufpreise nach Pferdetyp, AKU-Kosten und Erstausstattung. Die echten Anschaffungskosten im Ueberblick.",
+      "type": "article",
+      "url": "https://pferdewert.de/pferde-ratgeber/anschaffungskosten-pferd",
+      "site_name": "PferdeWert.de",
+      "locale": "de_DE",
+      "image": "https://pferdewert.de/images/ratgeber/anschaffungskosten-pferd.webp"
+    },
+    "twitter_card": {
+      "card": "summary_large_image",
+      "title": "Was kostet ein Pferd? Anschaffungskosten 2025",
+      "description": "Kaufpreise, AKU-Kosten und Erstausstattung - die echten Kosten."
+    }
+  },
+  "at": {
+    "metadata": {
+      "title": "Was kostet ein Pferd in Oesterreich? Anschaffungskosten 2025",
+      "description": "Was kostet ein Pferd in Oesterreich? Kaufpreise, AKU-Kosten und Erstausstattung fuer oesterreichische Pferdekaeufer. Alle Anschaffungskosten 2025.",
+      "canonical_url": "https://pferdewert.at/pferde-ratgeber/anschaffungskosten-pferd",
+      "robots": "index, follow",
+      "locale": "de_AT"
+    },
+    "open_graph": {
+      "title": "Was kostet ein Pferd in Oesterreich? Anschaffungskosten 2025",
+      "description": "Kaufpreise und AKU-Kosten fuer oesterreichische Pferdekaeufer. Alle Anschaffungskosten im Ueberblick.",
+      "type": "article",
+      "url": "https://pferdewert.at/pferde-ratgeber/anschaffungskosten-pferd",
+      "site_name": "PferdeWert.at",
+      "locale": "de_AT",
+      "image": "https://pferdewert.at/images/ratgeber/anschaffungskosten-pferd.webp"
+    },
+    "twitter_card": {
+      "card": "summary_large_image",
+      "title": "Was kostet ein Pferd in Oesterreich? 2025",
+      "description": "Kaufpreise und AKU-Kosten fuer oesterreichische Pferdekaeufer."
+    }
+  },
+  "ch": {
+    "metadata": {
+      "title": "Was kostet ein Pferd in der Schweiz? Anschaffungskosten 2025",
+      "description": "Was kostet ein Pferd in der Schweiz? Kaufpreise in CHF, AKU-Kosten und Erstausstattung fuer Schweizer Pferdekaeufer. Anschaffungskosten 2025.",
+      "canonical_url": "https://pferdewert.ch/pferde-ratgeber/anschaffungskosten-pferd",
+      "robots": "index, follow",
+      "locale": "de_CH"
+    },
+    "open_graph": {
+      "title": "Was kostet ein Pferd in der Schweiz? Anschaffungskosten 2025",
+      "description": "Kaufpreise in CHF und AKU-Kosten fuer Schweizer Pferdekaeufer. Alle Anschaffungskosten im Ueberblick.",
+      "type": "article",
+      "url": "https://pferdewert.ch/pferde-ratgeber/anschaffungskosten-pferd",
+      "site_name": "PferdeWert.ch",
+      "locale": "de_CH",
+      "image": "https://pferdewert.ch/images/ratgeber/anschaffungskosten-pferd.webp"
+    },
+    "twitter_card": {
+      "card": "summary_large_image",
+      "title": "Was kostet ein Pferd in der Schweiz? 2025",
+      "description": "Kaufpreise in CHF und AKU-Kosten fuer Schweizer Pferdekaeufer."
+    }
+  },
+  "hreflang": {
+    "de": "https://pferdewert.de/pferde-ratgeber/anschaffungskosten-pferd",
+    "de-AT": "https://pferdewert.at/pferde-ratgeber/anschaffungskosten-pferd",
+    "de-CH": "https://pferdewert.ch/pferde-ratgeber/anschaffungskosten-pferd",
+    "x-default": "https://pferdewert.de/pferde-ratgeber/anschaffungskosten-pferd"
+  },
+  "shared": {
+    "twitter_site": "@PferdeWert",
+    "twitter_creator": "@PferdeWert",
+    "og_image_width": 1200,
+    "og_image_height": 630
+  },
+  "validation": {
+    "de": {
+      "title_length": 60,
+      "description_length": 148,
+      "primary_keyword_in_title": true,
+      "title_valid": true,
+      "description_valid": true
+    },
+    "at": {
+      "title_length": 60,
+      "description_length": 146,
+      "primary_keyword_in_title": true,
+      "title_valid": true,
+      "description_valid": true
+    },
+    "ch": {
+      "title_length": 60,
+      "description_length": 141,
+      "primary_keyword_in_title": true,
+      "title_valid": true,
+      "description_valid": true
+    }
+  }
+}

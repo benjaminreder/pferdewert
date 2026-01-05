@@ -439,7 +439,7 @@ export default function UeberUns() {
               </div>
 
               <p className="text-xs text-gray-400 mt-4">
-                Benjamin Reder – Gründer von PferdeWert
+                Benjamin Reder – Gründer von {siteName.replace('.de', '').replace('.at', '').replace('.ch', '')}
               </p>
             </div>
           </div>
