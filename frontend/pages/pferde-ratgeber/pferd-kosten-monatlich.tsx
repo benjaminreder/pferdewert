@@ -301,7 +301,7 @@ export default function PferdKostenMonatlich() {
               <ul className="space-y-2 text-gray-700">
                 <li>• <strong>Stallmiete</strong> (Box, Futter, Halle): 550€</li>
                 <li>• <strong>Hufschmied</strong> (alle 8 Wochen, ca. 120€ pro Termin): ~75€/Monat</li>
-                <li>• <strong>Reitunterricht</strong> + gelegentlicher Beritt: 250-300€</li>
+                <li>• <strong>Reitunterricht</strong> + Beritt: 250-300€</li>
                 <li className="font-bold text-brand-brown">• Gesamt: &gt;800€ monatlich</li>
               </ul>
             </RatgeberHighlightBox>
