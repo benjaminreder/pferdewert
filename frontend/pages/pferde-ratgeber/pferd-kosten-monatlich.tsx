@@ -689,10 +689,7 @@ export default function PferdKostenMonatlich() {
 
           {/* FAQ Section */}
           <section id="faq" className="scroll-mt-32 lg:scroll-mt-40">
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
-              Noch Fragen? Die wichtigsten Antworten
-            </h2>
-            <FAQ faqs={faqItems} />
+            <FAQ faqs={faqItems} sectionTitle="Noch Fragen? Die wichtigsten Antworten" />
           </section>
 
           {/* Author Box */}
