@@ -59,6 +59,8 @@
   - ❌ `<Hero primaryCta={{ icon: <ArrowRight /> }} />`
   - ✅ `const icon = <ArrowRight />; <Hero primaryCta={{ icon }} />`
   - See [frontend-guidelines.md](docs/frontend-guidelines.md) lines 729-813 for details
+- ❌ **Doppelte FAQ Schemas** - `RatgeberHead` + `FAQ` generieren beide FAQPage Schema
+  - ✅ Bei Ratgeber-Seiten: `<FAQ withSchema={false} />` verwenden (Schema kommt aus RatgeberHead)
 - ❌ `useEffect(async () => {})` - breaks React rules
 - ✅ Create async function inside useEffect
 - ❌ Missing dependency arrays in useEffect
