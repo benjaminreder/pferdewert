@@ -689,7 +689,7 @@ export default function PferdKostenMonatlich() {
 
           {/* FAQ Section */}
           <section id="faq" className="scroll-mt-32 lg:scroll-mt-40">
-            <FAQ faqs={faqItems} sectionTitle="Noch Fragen? Die wichtigsten Antworten" />
+            <FAQ faqs={faqItems} sectionTitle="Noch Fragen? Die wichtigsten Antworten" withSchema={false} />
           </section>
 
           {/* Author Box */}
