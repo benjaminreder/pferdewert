@@ -118,7 +118,8 @@ export default function RatgeberHead({
   // e.g., basePath="/pferde-ratgeber", slug="aku-pferd" → "/pferde-ratgeber/aku-pferd"
   const fullPath = slug ? `${basePath}/${slug}` : basePath;
 
-  const canonicalUrl = `${domain}${fullPath}`;
+  // Canonical ALWAYS points to DE domain (solves duplicate content issue)
+  const canonicalUrl = `${DOMAINS['de']}${fullPath}`;
   const imageUrl = `${domain}${image}`;
   const finalDateModified = dateModified || datePublished;
 

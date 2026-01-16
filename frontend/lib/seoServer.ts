@@ -57,8 +57,10 @@ export function getSEOServerProps(
     return acc;
   }, {} as Record<string, string>);
 
-  // Canonical points to current domain
-  const canonical = `https://${country.domain}${cleanPath}`;
+  // Canonical ALWAYS points to DE domain
+  // This tells Google: "DE is the primary version, AT/CH are functional duplicates"
+  // Solves duplicate content issue while keeping country-specific form functionality
+  const canonical = `https://pferdewert.de${cleanPath}`;
 
   // Hreflang tags for all enabled countries
   const hreflangTags = [

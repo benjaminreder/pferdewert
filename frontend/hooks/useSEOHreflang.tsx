@@ -28,7 +28,6 @@
  * ```
  */
 
-import { useRouter } from 'next/router';
 import { getAvailableCountries } from '@/lib/countries';
 import { isPageAllowedForCountry, type CountryCode } from '@/lib/country-exclusive-pages';
 
@@ -130,35 +129,24 @@ export function useHreflangData(path: string): HreflangTag[] {
   return hreflangData;
 }
 
-// Domain mapping per Next.js i18n locale
-const LOCALE_TO_DOMAIN: Record<string, string> = {
-  'de': 'pferdewert.de',
-  'de-AT': 'pferdewert.at',
-  'de-CH': 'pferdewert.ch',
-} as const;
-
 /**
- * Get canonical URL for current domain
- * Uses useRouter().locale for SSR-safe domain detection
+ * Get canonical URL - ALWAYS points to DE domain
+ * This tells Google: "DE is the primary version, AT/CH are functional duplicates"
  *
  * @param path - The path without domain (e.g., '/pferd-kaufen/dressurpferd')
- * @returns Canonical URL for the current domain
+ * @returns Canonical URL pointing to pferdewert.de
  *
  * Usage:
  * ```tsx
  * const canonicalUrl = useCanonicalUrl('/pferd-kaufen/dressurpferd');
- * // On pferdewert.de → https://pferdewert.de/pferd-kaufen/dressurpferd
- * // On pferdewert.at → https://pferdewert.at/pferd-kaufen/dressurpferd
- * // On pferdewert.ch → https://pferdewert.ch/pferd-kaufen/dressurpferd
+ * // Always returns: https://pferdewert.de/pferd-kaufen/dressurpferd
  * ```
  *
- * CRITICAL: Uses useRouter().locale instead of getCurrentCountry() to ensure
- * correct canonical URL during SSR. This fixes Google indexing issues where
- * .at/.ch pages were showing .de canonical URLs.
+ * NOTE: This change (Jan 2025) solves duplicate content issues between
+ * DE/AT/CH domains. Hreflang tags still exist for user experience,
+ * but canonical consolidates indexing to DE.
  */
 export function useCanonicalUrl(path: string): string {
-  const { locale } = useRouter();
-  const domain = LOCALE_TO_DOMAIN[locale || 'de'] || 'pferdewert.de';
   const cleanPath = path.startsWith('/') ? path : `/${path}`;
-  return `https://${domain}${cleanPath}`;
+  return `https://pferdewert.de${cleanPath}`;
 }

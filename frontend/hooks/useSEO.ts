@@ -65,9 +65,10 @@ export function useSEO(): SEOConfig {
     const atUrl = `${DOMAINS['de-AT']}${pathname}`;
     const chUrl = `${DOMAINS['de-CH']}${pathname}`;
 
-    // Canonical points to current domain based on locale
-    const domain = DOMAINS[locale] || DOMAINS['de'];
-    const canonical = `${domain}${pathname}`;
+    // Canonical ALWAYS points to DE domain
+    // This tells Google: "DE is the primary version, AT/CH are functional duplicates"
+    // Solves duplicate content issue while keeping country-specific form functionality
+    const canonical = `${DOMAINS['de']}${pathname}`;
 
     // Hreflang tags (tell Google about all domain versions)
     const hreflangTags: HreflangTag[] = [
