@@ -87,7 +87,7 @@ export default function WertermittlungSection() {
             Wie viel ist mein Pferd wert?
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Die komplette Anleitung zur Wertermittlung 2025 – mit Preisformel,
+            Die komplette Anleitung zur Wertermittlung 2026 – mit Preisformel,
             aktuellen Marktdaten und Beispielrechnungen
           </p>
         </div>
@@ -222,7 +222,7 @@ export default function WertermittlungSection() {
           {/* Preistabellen */}
           <div className="space-y-12">
             <h3 className="text-2xl md:text-3xl font-bold text-gray-900 text-center">
-              Aktuelle Pferdepreise 2025 im Überblick
+              Aktuelle Pferdepreise 2026 im Überblick
             </h3>
 
             {/* Tabelle 1: Nach Rasse */}
@@ -249,7 +249,7 @@ export default function WertermittlungSection() {
                 </table>
               </div>
               <p className="text-sm text-gray-500 mt-2">
-                * Preise basierend auf Marktanalyse {marketSourceText}, Stand: Dezember 2025
+                * Preise basierend auf Marktanalyse {marketSourceText}, Stand: Januar 2026
               </p>
             </div>
 
@@ -455,7 +455,7 @@ export default function WertermittlungSection() {
                   Blutlinien können den tatsächlichen Verkaufspreis beeinflussen.
                 </p>
                 <p className="text-xs text-gray-500 mt-3">
-                  Stand: Dezember 2025 | Preise können regional variieren
+                  Stand: Januar 2026 | Preise können regional variieren
                 </p>
               </div>
             </div>
