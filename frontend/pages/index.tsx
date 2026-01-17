@@ -13,6 +13,10 @@ import { HomepageReviewSchema } from "@/components/PferdeWertReviewSchema";
 const TestimonialsSection = dynamic(() => import("@/components/TestimonialsSection"), {
   loading: () => <div className="min-h-[400px] bg-gray-50 animate-pulse" />,
 });
+// E-E-A-T: Founder Section für Trust-Signale
+const FounderSection = dynamic(() => import("@/components/FounderSection"), {
+  loading: () => <div className="min-h-[300px] bg-white animate-pulse" />,
+});
 const FeaturesSection = dynamic(() => import("@/components/FeaturesSection"), {
   loading: () => <div className="min-h-[500px] bg-gray-50 animate-pulse" />,
 });
@@ -539,6 +543,9 @@ export default function PferdeWertHomepage() {
 
         {/* Testimonials Section */}
         <TestimonialsSection />
+
+        {/* E-E-A-T: Founder Section - Zeigt echte Menschen hinter PferdeWert */}
+        <FounderSection />
 
         {/* AT/CH Only: Local Expertise Section - Explains localized algorithm */}
         {/* This creates unique content for AT/CH to improve Google indexing */}
