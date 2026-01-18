@@ -130,23 +130,35 @@ export function useHreflangData(path: string): HreflangTag[] {
 }
 
 /**
- * Get canonical URL - ALWAYS points to DE domain
- * This tells Google: "DE is the primary version, AT/CH are functional duplicates"
+ * Get canonical URL - points to CURRENT domain (self-referencing)
+ * This is the Google-recommended approach for multi-regional sites with hreflang
  *
  * @param path - The path without domain (e.g., '/pferd-kaufen/dressurpferd')
- * @returns Canonical URL pointing to pferdewert.de
+ * @returns Canonical URL pointing to the current domain
  *
  * Usage:
  * ```tsx
  * const canonicalUrl = useCanonicalUrl('/pferd-kaufen/dressurpferd');
- * // Always returns: https://pferdewert.de/pferd-kaufen/dressurpferd
+ * // Returns domain-specific URL based on current site
  * ```
  *
- * NOTE: This change (Jan 2025) solves duplicate content issues between
- * DE/AT/CH domains. Hreflang tags still exist for user experience,
- * but canonical consolidates indexing to DE.
+ * FIX (Jan 2025): Previous setup always pointed to DE which caused
+ * "hreflang to non-canonical" errors in Google Search Console.
+ * Each domain should now self-canonicalize while hreflang indicates relationships.
  */
 export function useCanonicalUrl(path: string): string {
+  const countries = getAvailableCountries();
   const cleanPath = path.startsWith('/') ? path : `/${path}`;
+
+  // Client-side: detect domain from window
+  if (typeof window !== 'undefined') {
+    const hostname = window.location.hostname;
+    const country = countries.find(c => c.domain === hostname);
+    if (country) {
+      return `https://${country.domain}${cleanPath}`;
+    }
+  }
+
+  // Fallback to DE for SSR (actual canonical will be set by server-side logic)
   return `https://pferdewert.de${cleanPath}`;
 }

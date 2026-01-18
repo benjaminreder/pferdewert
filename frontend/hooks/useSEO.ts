@@ -65,10 +65,12 @@ export function useSEO(): SEOConfig {
     const atUrl = `${DOMAINS['de-AT']}${pathname}`;
     const chUrl = `${DOMAINS['de-CH']}${pathname}`;
 
-    // Canonical ALWAYS points to DE domain
-    // This tells Google: "DE is the primary version, AT/CH are functional duplicates"
-    // Solves duplicate content issue while keeping country-specific form functionality
-    const canonical = `${DOMAINS['de']}${pathname}`;
+    // Canonical points to CURRENT domain (self-referencing)
+    // This is the Google-recommended approach for multi-regional sites with hreflang
+    // Each regional version is canonical for its own region
+    // hreflang tells Google about the relationship between versions
+    // FIX (Jan 2025): Previous setup caused "hreflang to non-canonical" errors
+    const canonical = `${DOMAINS[locale]}${pathname}`;
 
     // Hreflang tags (tell Google about all domain versions)
     const hreflangTags: HreflangTag[] = [
