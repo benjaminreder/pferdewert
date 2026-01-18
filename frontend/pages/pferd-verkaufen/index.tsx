@@ -105,7 +105,7 @@ const PferdVerkaufen: NextPage = () => {
   const jsonLdArticle = {
     '@context': 'https://schema.org',
     '@type': 'Article',
-    headline: 'Pferd verkaufen: Richtigen Verkaufspreis bestimmen (2025)',
+    headline: 'Pferd verkaufen: Richtigen Verkaufspreis bestimmen (2026)',
     description: 'Pferd erfolgreich verkaufen: Verkaufspreis ermitteln mit KI-Bewertung, Plattformvergleich (eHorses vs. pferde.de), rechtliche Absicherung und Verkaufsstrategien für optimalen Preis.',
     image: `${domain}/images/ratgeber/pferd-verkaufen/hero.webp`,
     author: {
@@ -122,8 +122,8 @@ const PferdVerkaufen: NextPage = () => {
         url: `${domain}/images/logo.webp`
       }
     },
-    datePublished: '2025-01-09',
-    dateModified: '2025-12-25',
+    datePublished: '2026-01-09',
+    dateModified: '2026-12-25',
     mainEntityOfPage: {
       '@type': 'WebPage',
       '@id': canonicalUrl
@@ -189,10 +189,10 @@ const PferdVerkaufen: NextPage = () => {
   return (
     <Layout fullWidth background="bg-gradient-to-b from-amber-50 to-white">
       <Head>
-        <title>Pferd verkaufen: Richtigen Verkaufspreis bestimmen (2025)</title>
+        <title>Pferd verkaufen: Richtigen Verkaufspreis bestimmen (2026)</title>
         <meta
           name="description"
-          content={`Pferd verkaufen 2025: KI-Bewertung in 2 Min (ab ${PRICING_FORMATTED.current}). Plattformvergleich, 7-Phasen-Prozess & rechtliche Tipps.`}
+          content={`Pferd verkaufen 2026: KI-Bewertung in 2 Min (ab ${PRICING_FORMATTED.current}). Plattformvergleich, 7-Phasen-Prozess & rechtliche Tipps.`}
         />
         <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
         <link rel="canonical" href={canonicalUrl} />
@@ -201,7 +201,7 @@ const PferdVerkaufen: NextPage = () => {
 
         {/* Open Graph */}
         <meta property="og:type" content="article" />
-        <meta property="og:title" content="Pferd verkaufen: Richtigen Verkaufspreis bestimmen (2025)" />
+        <meta property="og:title" content="Pferd verkaufen: Richtigen Verkaufspreis bestimmen (2026)" />
         <meta property="og:description" content="Pferd erfolgreich verkaufen: Verkaufspreis mit KI ermitteln, Plattformen vergleichen, rechtlich absichern. Jetzt optimalen Preis bestimmen!" />
         <meta property="og:url" content={canonicalUrl} />
         <meta property="og:site_name" content="PferdeWert.de" />
@@ -231,10 +231,10 @@ const PferdVerkaufen: NextPage = () => {
         <RatgeberHero
           badgeLabel="Verkaufsservice"
           badgeIcon={bookOpenIcon}
-          title="Pferd verkaufen: Richtigen Verkaufspreis bestimmen (2025)"
+          title="Pferd verkaufen: Richtigen Verkaufspreis bestimmen (2026)"
           subtitle="Du möchtest dein Pferd verkaufen? Der durchschnittliche Pferdeverkauf dauert 6-9 Monate – mit dem richtigen Verkaufspreis geht es deutlich schneller. Bestimme jetzt in 2 Minuten den optimalen Preis mit unserer KI-Bewertung, vergleiche Verkaufsplattformen (eHorses vs. pferde.de) und sichere dich rechtlich ab."
           readTime="18 Min."
-          publishDate="Dezember 2025"
+          publishDate="Dezember 2026"
           author={{ name: 'Benjamin Reder', href: '/ueber-pferdewert' }}
           primaryCta={{
             href: "/pferde-preis-berechnen",
@@ -309,7 +309,7 @@ const PferdVerkaufen: NextPage = () => {
             </p>
 
             <h3 className="text-2xl font-serif font-bold text-brand mt-8">
-              Pferdewert-Tabelle 2025: Preise nach Kategorie
+              Pferdewert-Tabelle 2026: Preise nach Kategorie
             </h3>
 
             <div className="overflow-x-auto">
@@ -470,7 +470,7 @@ const PferdVerkaufen: NextPage = () => {
           {/* Plattformen-Vergleich */}
           <section id="plattformen-vergleich" className="space-y-6 scroll-mt-32 lg:scroll-mt-40">
             <h2 className="text-3xl md:text-4xl font-serif font-bold text-brand">
-              Die besten Plattformen zum Pferd verkaufen: Vergleich 2025
+              Die besten Plattformen zum Pferd verkaufen: Vergleich 2026
             </h2>
 
             <p className="text-lg text-gray-700 leading-relaxed">
