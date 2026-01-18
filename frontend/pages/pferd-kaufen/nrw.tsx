@@ -53,7 +53,7 @@ const seoLocales = {
 const onlineMarketplaces = [
   {
     name: 'ehorses.de',
-    url: 'https://www.ehorses.de/pferde/nordrhein-westfalen/',
+    url: 'https://www.ehorses.de/pferde/nordrhein-westfalen',
     listings: '~1.550',
     description: 'Größter Pferdemarkt Europas mit umfangreichen NRW-Filtern',
     highlight: true,
@@ -127,8 +127,8 @@ const breedingAssociations = [
   {
     name: 'Westfälisches Pferdestammbuch e.V.',
     shortName: 'Westfalen',
-    url: 'https://www.westfalenpferde.de',
-    salesPortal: 'https://www.westfalenpferde.de/verkaufspferde/',
+    url: 'https://westfalenpferde.de/',
+    salesPortal: 'https://westfalenpferde.de/verkaufspferde/',
     description: 'Einer der größten deutschen Zuchtverbände. Regelmäßige Auktionen in Münster-Handorf.',
     events: 'Frühjahrs- und Herbstauktion',
   },

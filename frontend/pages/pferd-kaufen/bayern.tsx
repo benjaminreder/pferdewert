@@ -53,7 +53,7 @@ const seoLocales = {
 const onlineMarketplaces = [
   {
     name: 'ehorses.de',
-    url: 'https://www.ehorses.de/pferde/bayern/',
+    url: 'https://www.ehorses.de/pferde/bayern',
     listings: '~1.100',
     description: 'Größter Pferdemarkt Europas mit umfangreichen Bayern-Filtern',
     highlight: true,
@@ -87,8 +87,8 @@ const regionalBreeders = {
     region: 'Oberbayern',
     description: 'Premium-Segment mit internationalen Sportpferden und exzellenter Infrastruktur',
     breeders: [
-      { name: 'Landgestüt Schwaiganger', location: 'Ohlstadt', specialty: 'Bayerisches Warmblut, Hengststation', rating: '4.8', url: 'https://www.schwaiganger.bayern.de', official: true },
-      { name: 'Gestüt Gut Ising', location: 'Chieming', specialty: 'Dressur- und Springpferde', rating: '4.9', url: 'https://www.gut-ising.de' },
+      { name: 'Landgestüt Schwaiganger', location: 'Ohlstadt', specialty: 'Bayerisches Warmblut, Hengststation', rating: '4.8', url: 'https://www.baysg.bayern.de/zentren/schwaiganger/', official: true },
+      { name: 'Gestüt Gut Ising', location: 'Chieming', specialty: 'Dressur- und Springpferde', rating: '4.9', url: 'https://www.gut-ising.de/de/' },
       { name: 'Reitanlage Aubenhausen', location: 'Bad Aibling', specialty: 'Dressurpferde, Verkauf', rating: '4.7', url: null },
       { name: 'Pferdehof Tegernbach', location: 'Moosburg', specialty: 'Freizeitpferde, Westernpferde', rating: '4.6', url: null },
     ],
@@ -107,7 +107,7 @@ const regionalBreeders = {
     region: 'Schwaben & Allgäu',
     description: 'Paradies für Haflinger, Westernpferde und robuste Freizeitpferde',
     breeders: [
-      { name: 'Western City Dasing', location: 'Dasing', specialty: 'Quarter Horses, Paint Horses', rating: '4.3', url: 'https://www.western-city.de' },
+      { name: 'Rai-Reiten Dasing', location: 'Dasing', specialty: 'Quarter Horses, Paint Horses', rating: '4.3', url: 'https://www.rai-reiten-dasing.de/welcome' },
       { name: 'Haflingerhof Allgäu', location: 'Oberstdorf', specialty: 'Haflinger, almgeprägte Pferde', rating: '4.9', url: null },
       { name: 'Gestüt Augsburg', location: 'Augsburg', specialty: 'Sportpferde, Warmblut', rating: '4.5', url: null },
       { name: 'Reiterhof Kempten', location: 'Kempten', specialty: 'Freizeitpferde, Fjordpferde', rating: '4.6', url: null },
@@ -138,8 +138,8 @@ const breedingAssociations = [
   {
     name: 'Landgestüt Schwaiganger',
     shortName: 'Schwaiganger',
-    url: 'https://www.schwaiganger.bayern.de',
-    salesPortal: 'https://www.schwaiganger.bayern.de/hengste/',
+    url: 'https://www.baysg.bayern.de/zentren/schwaiganger/',
+    salesPortal: 'https://www.baysg.bayern.de/zentren/schwaiganger/',
     description: 'Staatliches Landgestüt seit 1747. Hengststation und Ausbildungszentrum.',
     events: 'Hengstparade (jährlich im September)',
   },

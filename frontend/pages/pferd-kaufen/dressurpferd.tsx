@@ -148,7 +148,7 @@ export default function DressurpferdKaufen() {
           attribution={{
             author: 'Eponimm',
             license: 'CC BY-SA 4.0',
-            licenseUrl: 'https://creativecommons.org/licenses/by-sa/4.0',
+            licenseUrl: 'https://creativecommons.org/licenses/by-sa/4.0/',
             source: 'Wikimedia Commons'
           }}
         />

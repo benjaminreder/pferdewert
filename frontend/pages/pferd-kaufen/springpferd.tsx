@@ -182,7 +182,7 @@ export default function SpringpferdKaufen() {
           attribution={{
             author: 'Lady-shirakawa',
             license: 'CC BY-SA 4.0',
-            licenseUrl: 'https://creativecommons.org/licenses/by-sa/4.0',
+            licenseUrl: 'https://creativecommons.org/licenses/by-sa/4.0/',
             source: 'Wikimedia Commons',
             originalUrl: 'https://commons.wikimedia.org/wiki/File:John_Whitaker_and_Argento_jumping_at_Olympia_2017.jpg'
           }}

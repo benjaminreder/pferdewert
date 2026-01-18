@@ -152,7 +152,7 @@ export default function PonyKaufen() {
           attribution={{
             author: 'John Kaye',
             license: 'CC BY-SA 2.0',
-            licenseUrl: 'https://creativecommons.org/licenses/by-sa/2.0',
+            licenseUrl: 'https://creativecommons.org/licenses/by-sa/2.0/',
             source: 'Geograph Britain and Ireland'
           }}
         />
