@@ -55,8 +55,8 @@ export default function Datenschutz() {
         </p>
         <p>
           Weitere Informationen finden Sie in der Datenschutzerklärung von Trustpilot unter:{' '}
-          <a href="https://de.legal.trustpilot.com/for-reviewers/end-user-privacy-terms" target="_blank" rel="noopener noreferrer" className="underline">
-            https://de.legal.trustpilot.com/for-reviewers/end-user-privacy-terms
+          <a href="https://legal.trustpilot.com/for-reviewers/end-user-privacy-terms" target="_blank" rel="noopener noreferrer" className="underline">
+            https://legal.trustpilot.com/for-reviewers/end-user-privacy-terms
           </a>
         </p>
 

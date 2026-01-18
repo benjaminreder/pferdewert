@@ -592,7 +592,7 @@ const Pferdekaufvertrag: NextPage = () => {
 
             <p className="text-lg text-gray-700 leading-relaxed">
               Kopiere die Infos direkt aus dem Pferdepass &ndash; keine Fehler riskieren. Die{' '}
-              <a href="https://www.pferd-aktuell.de/fn-service/fei-pferdepass" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+              <a href="https://www.pferd-aktuell.de/turniersport/turnierpferd/equidenpass/equidenpass" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
                 Deutsche Reiterliche Vereinigung (FN)
               </a>
               {' '}bietet offizielle Richtlinien und Musterverträge an.

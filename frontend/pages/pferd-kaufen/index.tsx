@@ -1540,7 +1540,7 @@ const relatedArticles = useMemo(() =>
                         </LocalizedLink>, auch bei Privatkäufen von netten Menschen. Nutze
                         Muster-Verträge von der{" "}
                         <a
-                          href="https://www.pferd-aktuell.de/shop/kaufvertrag-pferd"
+                          href="https://www.pferd-aktuell.de/shop/broschuren-formulare-vertrage-unterrichtsmaterial/vertragsmuster-rund-um-den-pferdesport.html"
                           target="_blank"
                           rel="noopener noreferrer"
                           className="text-brand-brown hover:underline font-semibold"
