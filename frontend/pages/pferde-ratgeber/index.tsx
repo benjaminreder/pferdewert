@@ -67,9 +67,8 @@ const PferdeRatgeber: NextPage<PageProps> = ({ artikel }) => {
           content="Alle Pferde-Ratgeber auf einen Blick: AKU Pferd, Kosten, Klassen, Ablauf, Pferd kaufen & verkaufen. Expertentipps für erfolgreichen Pferdekauf und -verkauf."
         />
         <meta name="keywords" content="Pferde Ratgeber, AKU Pferd, Pferd kaufen, Pferd verkaufen, Pferdekauf Ratgeber, Ankaufsuntersuchung, Pferdegesundheit" />
-        <meta name="robots" content="noindex, follow" />
+        <meta name="robots" content="index, follow" />
         <link rel="canonical" href={canonicalUrl} />
-        {/* NOTE: No hreflang for noindex pages - they're not indexed anyway */}
       </Head>
 
       <Header />

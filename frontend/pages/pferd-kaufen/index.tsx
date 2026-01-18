@@ -227,12 +227,11 @@ const relatedArticles = useMemo(() =>
             content="pferd kaufen, pferd kaufen anfänger, dressurpferde kaufen, springpferd kaufen, pferd kaufen worauf achten, pferdebewertung, aku pferd, pferd kaufen checkliste, pferdekaufvertrag"
           />
           <meta name="author" content="PferdeWert.de" />
-          <meta name="robots" content="noindex, follow" />
+          <meta name="robots" content="index, follow" />
           <meta httpEquiv="content-language" content="de-DE" />
 
           {/* Canonical URL */}
           <link rel="canonical" href={canonicalUrl} />
-          {/* NOTE: No hreflang for noindex pages - they're not indexed anyway */}
 
           {/* Open Graph / Facebook */}
           <meta property="og:type" content="article" />
