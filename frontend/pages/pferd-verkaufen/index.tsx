@@ -105,7 +105,7 @@ const PferdVerkaufen: NextPage = () => {
   const jsonLdArticle = {
     '@context': 'https://schema.org',
     '@type': 'Article',
-    headline: 'Pferd verkaufen 2025: Richtigen Verkaufspreis bestimmen',
+    headline: 'Pferd verkaufen: Richtigen Verkaufspreis bestimmen (2025)',
     description: 'Pferd erfolgreich verkaufen: Verkaufspreis ermitteln mit KI-Bewertung, Plattformvergleich (eHorses vs. pferde.de), rechtliche Absicherung und Verkaufsstrategien für optimalen Preis.',
     image: `${domain}/images/ratgeber/pferd-verkaufen/hero.webp`,
     author: {
@@ -189,7 +189,7 @@ const PferdVerkaufen: NextPage = () => {
   return (
     <Layout fullWidth background="bg-gradient-to-b from-amber-50 to-white">
       <Head>
-        <title>Pferd verkaufen 2025: Richtigen Verkaufspreis bestimmen</title>
+        <title>Pferd verkaufen: Richtigen Verkaufspreis bestimmen (2025)</title>
         <meta
           name="description"
           content={`Pferd verkaufen 2025: KI-Bewertung in 2 Min (ab ${PRICING_FORMATTED.current}). Plattformvergleich, 7-Phasen-Prozess & rechtliche Tipps.`}
@@ -201,7 +201,7 @@ const PferdVerkaufen: NextPage = () => {
 
         {/* Open Graph */}
         <meta property="og:type" content="article" />
-        <meta property="og:title" content="Pferd verkaufen 2025: Richtigen Verkaufspreis bestimmen" />
+        <meta property="og:title" content="Pferd verkaufen: Richtigen Verkaufspreis bestimmen (2025)" />
         <meta property="og:description" content="Pferd erfolgreich verkaufen: Verkaufspreis mit KI ermitteln, Plattformen vergleichen, rechtlich absichern. Jetzt optimalen Preis bestimmen!" />
         <meta property="og:url" content={canonicalUrl} />
         <meta property="og:site_name" content="PferdeWert.de" />
