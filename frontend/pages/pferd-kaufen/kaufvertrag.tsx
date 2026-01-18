@@ -234,7 +234,7 @@ const Pferdekaufvertrag: NextPage = () => {
 
             <p className="text-lg text-gray-700 leading-relaxed">
               Aus der Praxis zeigen sich die schwersten Fehler bei mündlichen Absprachen. Ein{' '}
-              <LocalizedLink href="/pferde-ratgeber/pferd-verkaufen" className="text-blue-600 hover:underline">
+              <LocalizedLink href="/pferd-verkaufen" className="text-blue-600 hover:underline">
                 Verkäufer
               </LocalizedLink>
               {' '}sagt: &ldquo;Natürlich ist das Pferd ausgebildet.&rdquo; Der Käufer versteht: &ldquo;Springtraining auf 1,20m.&rdquo; Der Streit ist vorprogrammiert.
@@ -423,7 +423,7 @@ const Pferdekaufvertrag: NextPage = () => {
 
             <p className="text-lg text-gray-700 leading-relaxed">
               <strong>Gewerbliche Verkäufer</strong> (Unternehmer nach BGB): Züchter, Pferdetrainer, Pferdehandel &ndash; also jemand, für den{' '}
-              <LocalizedLink href="/pferde-ratgeber/pferd-verkaufen" className="text-blue-600 hover:underline">
+              <LocalizedLink href="/pferd-verkaufen" className="text-blue-600 hover:underline">
                 Pferdeverkauf
               </LocalizedLink>
               {' '}das Geschäft ist.
@@ -791,7 +791,7 @@ const Pferdekaufvertrag: NextPage = () => {
 
             <p className="text-lg text-gray-700 leading-relaxed">
               Beim{' '}
-              <LocalizedLink href="/pferde-ratgeber/pferd-verkaufen" className="text-blue-600 hover:underline">
+              <LocalizedLink href="/pferd-verkaufen" className="text-blue-600 hover:underline">
                 Pferdeverkauf
               </LocalizedLink>
               {' '}kann Umsatzsteuer (MwSt.) anfallen &ndash; aber nicht immer:
@@ -979,7 +979,7 @@ const Pferdekaufvertrag: NextPage = () => {
               </li>
               <li className="text-lg">
                 <strong>Sei ehrlich über bekannte Mängel</strong> &ndash; Wenn das Pferd einen bekannten Fehler hat (Sommerekzem, leichte Lahmheit), erwähne ihn. Ein ehrlicher{' '}
-                <LocalizedLink href="/pferde-ratgeber/pferd-verkaufen" className="text-blue-600 hover:underline">
+                <LocalizedLink href="/pferd-verkaufen" className="text-blue-600 hover:underline">
                   Verkäufer
                 </LocalizedLink>
                 {' '}wird nicht verklagt.
