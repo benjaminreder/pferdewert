@@ -164,11 +164,10 @@ const Pferdekaufvertrag: NextPage = () => {
         basePath="/pferd-kaufen"
         image="/images/ratgeber/horses-mountain-field-spain.webp"
         locales={seoLocales}
-        datePublished="2025-10-28"
+        datePublished="2026-01-20"
         wordCount={4500}
         breadcrumbTitle="Pferdekaufvertrag"
         faqItems={faqItems}
-        noindex={true}
       />
 
       <Layout fullWidth={true} background="bg-gradient-to-b from-amber-50 to-white">
