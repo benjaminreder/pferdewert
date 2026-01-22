@@ -2,7 +2,7 @@ import LocalizedLink from '@/components/LocalizedLink'
 import { NextPage } from 'next'
 import { useRouter } from 'next/router'
 import { useMemo, useCallback } from 'react'
-import { FileText, AlertTriangle } from 'lucide-react'
+import { FileText, AlertTriangle, Download } from 'lucide-react'
 import Layout from '@/components/Layout'
 import RatgeberHero from '@/components/ratgeber/RatgeberHero'
 import RatgeberHeroImage from '@/components/ratgeber/RatgeberHeroImage'
@@ -20,6 +20,7 @@ import AuthorBox from '@/components/AuthorBox'
 // FAST REFRESH FIX: Define icons at module level
 const fileTextIcon = <FileText className="h-4 w-4" />
 const warningIcon = <AlertTriangle className="w-5 h-5 text-brand-brown" />
+const downloadIcon = <Download className="w-5 h-5" />
 
 // Section definitions for Table of Contents (locale-aware)
 const getSections = (locale: string) => {
@@ -80,31 +81,31 @@ const faqItems = [
 // SEO Locales for RatgeberHead
 const seoLocales = {
   de: {
-    title: 'Pferdekaufvertrag: Rechtssicherer Kaufvertrag (7-Punkte Anleitung)',
-    description: 'Pferdekaufvertrag leicht erklärt: 7 wesentliche Bestandteile, häufige Fehler vermeiden, kostenloses Muster downloaden. Rechtlich sicher kaufen & verkaufen.',
-    keywords: 'pferdekaufvertrag, pferdekauf vertrag, pferdekaufvertrag privat, pferdekaufvertrag muster, pferdekaufvertrag ohne gewährleistung',
-    ogTitle: 'Pferdekaufvertrag: Rechtssicherer Kaufvertrag (7-Punkte Anleitung)',
-    ogDescription: 'Pferdekaufvertrag leicht erklärt: 7 wesentliche Bestandteile, häufige Fehler vermeiden, kostenloses Muster downloaden.',
-    twitterTitle: 'Pferdekaufvertrag: 7-Punkte Anleitung',
-    twitterDescription: 'Erfahr, welche 7 Punkte in einen rechtssicheren Pferdekaufvertrag gehören & vermeide teure Fehler.',
+    title: 'Pferdekaufvertrag Muster PDF ▷ Vorlage zum Download',
+    description: 'Pferdekaufvertrag als PDF herunterladen ✓ Privat oder gewerblich ✓ Mit/ohne Gewährleistung ✓ Alle wichtigen Klauseln erklärt ✓ Rechtssicher kaufen & verkaufen',
+    keywords: 'pferdekaufvertrag, kaufvertrag pferd, pferdekaufvertrag muster, pferdekaufvertrag pdf, pferdekaufvertrag privat, pferdekaufvertrag ohne gewährleistung, kaufvertrag pferd privat',
+    ogTitle: 'Pferdekaufvertrag Muster PDF ▷ Vorlage zum Download',
+    ogDescription: 'Pferdekaufvertrag als PDF herunterladen. Privat oder gewerblich, mit/ohne Gewährleistung. Alle wichtigen Klauseln erklärt.',
+    twitterTitle: 'Pferdekaufvertrag Muster PDF zum Download',
+    twitterDescription: 'Rechtssicheres Vertragsmuster für den Pferdekauf. Sofort als PDF herunterladen.',
   },
   at: {
-    title: 'Pferdekaufvertrag Österreich: Rechtssicherer Kaufvertrag (7-Punkte Anleitung)',
-    description: 'Pferdekaufvertrag in Österreich: 7 wesentliche Bestandteile, häufige Fehler vermeiden. Rechtlich sicher kaufen & verkaufen nach ABGB.',
-    keywords: 'pferdekaufvertrag österreich, pferdekauf vertrag, pferdekaufvertrag privat, pferdekaufvertrag muster österreich',
-    ogTitle: 'Pferdekaufvertrag Österreich: Rechtssicherer Kaufvertrag (7-Punkte Anleitung)',
-    ogDescription: 'Pferdekaufvertrag in Österreich: 7 wesentliche Bestandteile, häufige Fehler vermeiden.',
-    twitterTitle: 'Pferdekaufvertrag Österreich: 7-Punkte Anleitung',
-    twitterDescription: 'Erfahr, welche 7 Punkte in einen rechtssicheren Pferdekaufvertrag gehören.',
+    title: 'Pferdekaufvertrag Österreich: Muster PDF ▷ Vorlage Download',
+    description: 'Pferdekaufvertrag für Österreich als PDF ✓ Nach ABGB ✓ Privat oder gewerblich ✓ Mit/ohne Gewährleistung ✓ Rechtssicher kaufen & verkaufen',
+    keywords: 'pferdekaufvertrag österreich, kaufvertrag pferd österreich, pferdekaufvertrag muster österreich, pferdekaufvertrag privat',
+    ogTitle: 'Pferdekaufvertrag Österreich: Muster PDF ▷ Vorlage Download',
+    ogDescription: 'Pferdekaufvertrag für Österreich als PDF. Nach ABGB, privat oder gewerblich.',
+    twitterTitle: 'Pferdekaufvertrag Österreich: Muster PDF',
+    twitterDescription: 'Rechtssicheres Vertragsmuster für Österreich. Sofort als PDF herunterladen.',
   },
   ch: {
-    title: 'Pferdekaufvertrag Schweiz: Rechtssicherer Kaufvertrag (7-Punkte Anleitung)',
-    description: 'Pferdekaufvertrag in der Schweiz: 7 wesentliche Bestandteile, häufige Fehler vermeiden. Rechtlich sicher kaufen & verkaufen nach OR.',
-    keywords: 'pferdekaufvertrag schweiz, pferdekauf vertrag, pferdekaufvertrag privat, pferdekaufvertrag muster schweiz',
-    ogTitle: 'Pferdekaufvertrag Schweiz: Rechtssicherer Kaufvertrag (7-Punkte Anleitung)',
-    ogDescription: 'Pferdekaufvertrag in der Schweiz: 7 wesentliche Bestandteile, häufige Fehler vermeiden.',
-    twitterTitle: 'Pferdekaufvertrag Schweiz: 7-Punkte Anleitung',
-    twitterDescription: 'Erfahr, welche 7 Punkte in einen rechtssicheren Pferdekaufvertrag gehören.',
+    title: 'Pferdekaufvertrag Schweiz: Muster PDF ▷ Vorlage Download',
+    description: 'Pferdekaufvertrag für die Schweiz als PDF ✓ Nach OR ✓ Privat oder gewerblich ✓ Mit/ohne Gewährleistung ✓ Rechtssicher kaufen & verkaufen',
+    keywords: 'pferdekaufvertrag schweiz, kaufvertrag pferd schweiz, pferdekaufvertrag muster schweiz, pferdekaufvertrag privat',
+    ogTitle: 'Pferdekaufvertrag Schweiz: Muster PDF ▷ Vorlage Download',
+    ogDescription: 'Pferdekaufvertrag für die Schweiz als PDF. Nach OR, privat oder gewerblich.',
+    twitterTitle: 'Pferdekaufvertrag Schweiz: Muster PDF',
+    twitterDescription: 'Rechtssicheres Vertragsmuster für die Schweiz. Sofort als PDF herunterladen.',
   },
 }
 
@@ -176,8 +177,8 @@ const Pferdekaufvertrag: NextPage = () => {
         <RatgeberHero
           badgeLabel="Rechtsguide"
           badgeIcon={fileTextIcon}
-          title="Pferdekaufvertrag: Rechtssicherer Kaufvertrag"
-          subtitle="Rechtliche Absicherung beim Pferdekauf und -verkauf: Die 7 wesentlichen Bestandteile, häufige Fehler und praktische Checklisten"
+          title="Pferdekaufvertrag: Muster & Vorlage zum Download"
+          subtitle="Rechtssicheres Vertragsmuster für den privaten Pferdekauf – mit oder ohne Gewährleistung – sofort als PDF verfügbar"
           readTime="15 Min."
           publishDate="November 2025"
           author={{ name: 'Benjamin Reder', href: '/ueber-pferdewert' }}
@@ -200,6 +201,33 @@ const Pferdekaufvertrag: NextPage = () => {
 
         {/* Table of Contents */}
         <RatgeberTableOfContents sections={sections} onNavigate={handleTableOfContentsClick} />
+
+        {/* Download Box */}
+        <div className="max-w-3xl mx-auto px-4 md:px-6 py-8">
+          <div className="bg-gradient-to-r from-brand/5 to-brand-brown/5 border border-brand/20 rounded-xl p-6 md:p-8">
+            <div className="flex flex-col md:flex-row items-center gap-6">
+              <div className="flex-shrink-0 w-16 h-16 bg-brand/10 rounded-full flex items-center justify-center">
+                <FileText className="w-8 h-8 text-brand" />
+              </div>
+              <div className="flex-1 text-center md:text-left">
+                <h3 className="text-xl font-serif font-bold text-brand mb-2">
+                  Pferdekaufvertrag Muster (PDF)
+                </h3>
+                <p className="text-gray-600">
+                  Rechtssicheres Vertragsmuster zum Ausfüllen &ndash; alle wichtigen Klauseln enthalten.
+                </p>
+              </div>
+              <a
+                href="/downloads/pferdekaufvertrag-muster.pdf"
+                download="Pferdekaufvertrag-Muster-PferdeWert.pdf"
+                className="flex items-center gap-2 bg-brand hover:bg-brand/90 text-white font-semibold px-6 py-3 rounded-lg transition-colors shadow-md hover:shadow-lg"
+              >
+                {downloadIcon}
+                <span>PDF herunterladen</span>
+              </a>
+            </div>
+          </div>
+        </div>
 
         {/* Content Body - Text First */}
         <div className="max-w-3xl mx-auto px-4 md:px-6 py-12 md:py-16 space-y-12">
