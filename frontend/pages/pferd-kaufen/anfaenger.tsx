@@ -1069,7 +1069,7 @@ export default function AnfaengerpferdKaufen() {
                 <p className="text-blue-800 mb-4">
                   Verwende eine professionelle Vertragvorlage, um nichts zu vergessen:
                 </p>
-                <LocalizedLink href="/pferd-kaufen/kaufvertrag" className="inline-flex items-center text-blue-600 hover:text-blue-800 font-semibold underline">
+                <LocalizedLink href="/pferde-ratgeber/pferdekaufvertrag" className="inline-flex items-center text-blue-600 hover:text-blue-800 font-semibold underline">
                   Zum Pferdekaufvertrag-Ratgeber mit kostenloser Vorlage →
                 </LocalizedLink>
               </div>

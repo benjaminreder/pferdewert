@@ -96,7 +96,7 @@ export default function FreizeitpferdKaufen() {
 
   const relatedArticles = [
     {
-      href: '/pferd-kaufen/kaufvertrag',
+      href: '/pferde-ratgeber/pferdekaufvertrag',
       image: '/images/ratgeber/horses-mountain-field-spain.webp',
       title: 'Pferdekaufvertrag: Rechtliche Absicherung beim Pferdekauf',
       badge: 'Finanzen & Recht',
@@ -617,7 +617,7 @@ export default function FreizeitpferdKaufen() {
               Ein professioneller Kaufvertrag schützt dich vor bösen Überraschungen. Erfahre, welche 7 Punkte dein Pferdekaufvertrag enthalten muss.
             </p>
             <LocalizedLink
-               href="/pferd-kaufen/kaufvertrag"
+               href="/pferde-ratgeber/pferdekaufvertrag"
               className="inline-flex items-center text-brand font-semibold hover:text-brand-dark transition-colors"
             >
               Zum Kaufvertrag-Ratgeber
@@ -713,7 +713,7 @@ export default function FreizeitpferdKaufen() {
               <strong>Tipp:</strong> Lass die Ankaufsuntersuchung im Kaufvertrag dokumentieren. Wenn der Tierarzt nichts finden konnte und das Pferd später Probleme hat, schützt das dich rechtlich.
             </p>
             <p className="text-lg text-gray-700 leading-relaxed">
-              Detaillierte Informationen und kostenlose Vertragsvorlagen findest du in unserem <LocalizedLink href="/pferd-kaufen/kaufvertrag" className="text-brand hover:text-brand-dark underline">Pferdekaufvertrag-Ratgeber</LocalizedLink>.
+              Detaillierte Informationen und kostenlose Vertragsvorlagen findest du in unserem <LocalizedLink href="/pferde-ratgeber/pferdekaufvertrag" className="text-brand hover:text-brand-dark underline">Pferdekaufvertrag-Ratgeber</LocalizedLink>.
             </p>
           </section>
 

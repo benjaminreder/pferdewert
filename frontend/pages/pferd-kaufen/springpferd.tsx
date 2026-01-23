@@ -538,7 +538,7 @@ export default function SpringpferdKaufen() {
             </p>
 
             <p className="text-lg text-gray-700 leading-relaxed">
-              → Inklusive rechtssicherer Vertragsvorlage und allen wichtigen Klauseln: Unser <LocalizedLink href="/pferd-kaufen/kaufvertrag" className="text-brand-brown hover:underline font-semibold">kompletter Pferdekaufvertrag-Ratgeber</LocalizedLink>.
+              → Inklusive rechtssicherer Vertragsvorlage und allen wichtigen Klauseln: Unser <LocalizedLink href="/pferde-ratgeber/pferdekaufvertrag" className="text-brand-brown hover:underline font-semibold">kompletter Pferdekaufvertrag-Ratgeber</LocalizedLink>.
             </p>
           </section>
 

@@ -9,6 +9,7 @@ import RatgeberHead from '@/components/ratgeber/RatgeberHead'
 import FAQ from '@/components/FAQ'
 import RatgeberRelatedArticles from '@/components/ratgeber/RatgeberRelatedArticles'
 import RatgeberFinalCTA from '@/components/ratgeber/RatgeberFinalCTA'
+import KaufpreisStatistik from '@/components/statistics/KaufpreisStatistik'
 // SurveyBox moved to pferd-kosten-monatlich
 import { Calculator, ShieldAlert } from 'lucide-react'
 import { getRelatedArticles, getRatgeberPath } from '@/lib/ratgeber-registry'
@@ -275,6 +276,9 @@ export default function WasKostetEinPferd() {
               </p>
             </div>
 
+            {/* Echte Marktdaten aus 90 KI-Bewertungen */}
+            <KaufpreisStatistik className="mb-10" />
+
             {/* Preise nach Pferdetyp */}
             <h3 className="text-2xl font-bold text-gray-900 mb-6">Preise nach Pferdetyp</h3>
 
@@ -396,7 +400,7 @@ export default function WasKostetEinPferd() {
             <div className="bg-blue-50 border-l-4 border-blue-500 p-6 mb-8">
               <p className="text-lg text-gray-700">
                 Nach erfolgreicher AKU solltest du den Kauf rechtssicher mit einem{' '}
-                <LocalizedLink href="/pferd-kaufen/kaufvertrag" className="text-primary-600 hover:text-primary-700 font-semibold">
+                <LocalizedLink href="/pferde-ratgeber/pferdekaufvertrag" className="text-primary-600 hover:text-primary-700 font-semibold">
                   Pferdekaufvertrag
                 </LocalizedLink>{' '}
                 abschließen. Dies schützt beide Parteien und klärt wichtige Details wie Gewährleistung, Rücktrittsbedingungen und vereinbarte Mängel.

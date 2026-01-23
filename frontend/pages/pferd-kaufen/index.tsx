@@ -973,7 +973,7 @@ const relatedArticles = useMemo(() =>
 
                     <ul className="space-y-3 text-gray-700 leading-relaxed">
                       <li>
-                        <strong className="text-brand-brown">✓ Schriftlicher <LocalizedLink href="/pferd-kaufen/kaufvertrag" className="text-brand-brown hover:underline font-semibold">Pferdekaufvertrag</LocalizedLink> abschließen</strong> – Ein Kaufvertrag sollte enthalten: genaue Pferdebeschreibung (Name, Rasse, Geburtsdatum, Abzeichen), Kaufpreis, Ausbildungsstand, Zweck des Pferdes, Gewährleistungsfristen und Unterschriften beider Parteien.
+                        <strong className="text-brand-brown">✓ Schriftlicher <LocalizedLink href="/pferde-ratgeber/pferdekaufvertrag" className="text-brand-brown hover:underline font-semibold">Pferdekaufvertrag</LocalizedLink> abschließen</strong> – Ein Kaufvertrag sollte enthalten: genaue Pferdebeschreibung (Name, Rasse, Geburtsdatum, Abzeichen), Kaufpreis, Ausbildungsstand, Zweck des Pferdes, Gewährleistungsfristen und Unterschriften beider Parteien.
                       </li>
                       <li>
                         <strong className="text-brand-brown">✓ Versicherungen abschließen</strong> – Zwei Versicherungen sind Standard: Haftpflichtversicherung (für Schäden, die Ihr Pferd anrichtet) und OP-Versicherung (für teure Tierarzt-Operationen). Diese sind keine Luxus, sondern notwendiger Schutz.
@@ -1534,7 +1534,7 @@ const relatedArticles = useMemo(() =>
                       <p className="font-semibold text-brand-brown mb-1">Die Lösung:</p>
                       <p>
                         Bestehe auf einem schriftlichen{" "}
-                        <LocalizedLink href="/pferd-kaufen/kaufvertrag" className="text-brand-brown hover:underline font-semibold">
+                        <LocalizedLink href="/pferde-ratgeber/pferdekaufvertrag" className="text-brand-brown hover:underline font-semibold">
                           Pferdekaufvertrag
                         </LocalizedLink>, auch bei Privatkäufen von netten Menschen. Nutze
                         Muster-Verträge von der{" "}

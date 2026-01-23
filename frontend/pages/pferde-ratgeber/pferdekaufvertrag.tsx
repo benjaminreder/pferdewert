@@ -148,7 +148,7 @@ const Pferdekaufvertrag: NextPage = () => {
 
   // CRITICAL: Related articles MUST be inside component to avoid Next.js cache issues
   const relatedArticles = useMemo(() =>
-    getRelatedArticles('kaufvertrag').map(entry => ({
+    getRelatedArticles('pferdekaufvertrag').map(entry => ({
       title: entry.title,
       description: entry.description,
       href: getRatgeberPath(entry.slug),
@@ -161,8 +161,8 @@ const Pferdekaufvertrag: NextPage = () => {
   return (
     <>
       <RatgeberHead
-        slug="kaufvertrag"
-        basePath="/pferd-kaufen"
+        slug="pferdekaufvertrag"
+        basePath="/pferde-ratgeber"
         image="/images/ratgeber/horses-mountain-field-spain.webp"
         locales={seoLocales}
         datePublished="2026-01-20"
@@ -178,7 +178,7 @@ const Pferdekaufvertrag: NextPage = () => {
           badgeLabel="Rechtsguide"
           badgeIcon={fileTextIcon}
           title="Pferdekaufvertrag: Muster & Vorlage zum Download"
-          subtitle="Rechtssicheres Vertragsmuster für den privaten Pferdekauf – mit oder ohne Gewährleistung – sofort als PDF verfügbar"
+          subtitle="Rechtssicheres Vertragsmuster für Käufer & Verkäufer – privat oder gewerblich, mit oder ohne Gewährleistung – sofort als PDF"
           readTime="15 Min."
           publishDate="November 2025"
           author={{ name: 'Benjamin Reder', href: '/ueber-pferdewert' }}

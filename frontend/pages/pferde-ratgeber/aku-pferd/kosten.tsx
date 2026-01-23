@@ -417,7 +417,7 @@ const AkuPferdKosten: NextPage = () => {
               <RatgeberHighlightBox title="Wichtig: Schriftliche Festlegung" icon={walletBrownIcon}>
                 <p className="text-gray-700">
                   <strong>Vereinbare alle Kostenpunkte schriftlich im{" "}
-                  <LocalizedLink href="/pferd-kaufen/kaufvertrag" className="text-blue-600 hover:text-blue-800 underline font-semibold">
+                  <LocalizedLink href="/pferde-ratgeber/pferdekaufvertrag" className="text-blue-600 hover:text-blue-800 underline font-semibold">
                     Pferdekaufvertrag
                   </LocalizedLink>
                   {" "}oder per E-Mail</strong>, um später Streitigkeiten zu vermeiden. Dies gilt besonders, wenn die Kostenübernahme

@@ -419,7 +419,7 @@ export default function DressurpferdKaufen() {
               Kaufvertrag, AKU, Versicherungen – diese Punkte solltest du nie überspringen. PferdeWert hilft dir zusätzlich mit einer objektiven Bewertung, um teure Fehlkäufe zu vermeiden.
             </p>
             <LocalizedLink
-               href="/pferd-kaufen/kaufvertrag"
+               href="/pferde-ratgeber/pferdekaufvertrag"
               className="inline-flex items-center text-brand font-semibold hover:text-brand-dark transition-colors"
             >
               Mehr zum Kaufvertrag

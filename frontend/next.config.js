@@ -325,11 +325,15 @@ const nextConfig = {
         destination: '/pferd-kaufen/pony',
         statusCode: 301,
       },
+      // ===== KAUFVERTRAG MIGRATION (Jan 2026) =====
+      // Kaufvertrag ist informational Intent → zurück ins Ratgeber-Cluster
+      // Neutral für beide Hubs (Käufer + Verkäufer)
       {
-        source: '/pferde-ratgeber/pferdekaufvertrag',
-        destination: '/pferd-kaufen/kaufvertrag',
+        source: '/pferd-kaufen/kaufvertrag',
+        destination: '/pferde-ratgeber/pferdekaufvertrag',
         statusCode: 301,
       },
+      // ===== ENDE KAUFVERTRAG MIGRATION =====
       {
         source: '/pferde-ratgeber/lipizzaner',
         destination: '/pferd-kaufen/lipizzaner',

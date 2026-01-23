@@ -511,7 +511,7 @@ const Pferdemarkt: NextPage = () => {
                 <li><strong>Hufe und Zähne prüfen</strong> – Alter und Gesundheit erkennen</li>
                 <li><strong>Gang beobachten</strong> – an der Hand und unter dem Reiter</li>
                 <li><strong>Papiere checken</strong> – Stammbuch, Impfpass, Rechnungen</li>
-                <li><strong>Kaufvertrag absichern</strong> – Nutze ein rechtssicheres Kaufvertrag-Template. Mehr Informationen findest du in unserem Ratgeber <LocalizedLink href="/pferd-kaufen/kaufvertrag" className="text-blue-600 hover:underline">Pferdekaufvertrag – Das musst du beachten</LocalizedLink></li>
+                <li><strong>Kaufvertrag absichern</strong> – Nutze ein rechtssicheres Kaufvertrag-Template. Mehr Informationen findest du in unserem Ratgeber <LocalizedLink href="/pferde-ratgeber/pferdekaufvertrag" className="text-blue-600 hover:underline">Pferdekaufvertrag – Das musst du beachten</LocalizedLink></li>
               </ol>
               <p className="text-lg leading-relaxed text-gray-700 mt-4">
                 Weitere praktische Tipps zum Pferdekauf findest du in unserem vollständigen Guide <LocalizedLink href="/pferd-kaufen" className="text-blue-600 hover:underline">Pferd kaufen – 12 Tipps & Checkliste</LocalizedLink>.
@@ -563,7 +563,7 @@ const Pferdemarkt: NextPage = () => {
                 <li>• <strong>Vorsicht bei unrealistisch niedrigen Preisen</strong> – oft Betrugssignale</li>
                 <li>• <strong>Nur mit verifizierten Verkäufern interagieren</strong> – Bewertungen checken</li>
                 <li>• <strong>Persönliche Daten schützen</strong> – Adresse/Bankverbindung erst nach Vertrauen teilen</li>
-                <li>• <strong>Rechtssicheren Kaufvertrag verwenden</strong> – Nutze einen legalen Kaufvertrag, um deine Rechte zu schützen. Mehr Informationen findest du in unserem Ratgeber <LocalizedLink href="/pferd-kaufen/kaufvertrag" className="text-blue-600 hover:underline">Pferdekaufvertrag – Das musst du beachten</LocalizedLink></li>
+                <li>• <strong>Rechtssicheren Kaufvertrag verwenden</strong> – Nutze einen legalen Kaufvertrag, um deine Rechte zu schützen. Mehr Informationen findest du in unserem Ratgeber <LocalizedLink href="/pferde-ratgeber/pferdekaufvertrag" className="text-blue-600 hover:underline">Pferdekaufvertrag – Das musst du beachten</LocalizedLink></li>
               </ul>
 
               <RatgeberHighlightBox

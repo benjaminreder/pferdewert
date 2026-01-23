@@ -183,7 +183,7 @@ export const RATGEBER_ENTRIES: RatgeberEntry[] = [
     relatedSlugs: [
       '', // Hub-Seite
       'anfaenger',
-      'kaufvertrag'
+      'pferdekaufvertrag'
     ]
   },
 
@@ -225,21 +225,21 @@ export const RATGEBER_ENTRIES: RatgeberEntry[] = [
     ]
   },
 
-  // Spoke: /pferd-kaufen/kaufvertrag
+  // Ratgeber: /pferde-ratgeber/pferdekaufvertrag (informational, neutral für Käufer + Verkäufer)
   {
-    slug: 'kaufvertrag',
-    basePath: '/pferd-kaufen',
+    slug: 'pferdekaufvertrag',
+    basePath: '/pferde-ratgeber',
     title: 'Pferdekaufvertrag: Rechtssicherer Kaufvertrag (7-Punkte Anleitung)',
     description: 'Pferdekaufvertrag leicht erklärt: 7 wesentliche Bestandteile, häufige Fehler vermeiden, kostenloses Muster downloaden. Rechtlich sicher kaufen & verkaufen.',
     category: 'Finanzen & Recht',
     readTime: '12 Min.',
     image: '/images/ratgeber/horses-mountain-field-spain.webp',
-    priority: '0.7',
+    priority: '0.8',
     changefreq: 'monthly',
     relatedSlugs: [
-      '', // Hub-Seite
       'aku-pferd',
-      'pferd-verkaufen'
+      'pferd-verkaufen',
+      'was-kostet-ein-pferd'
     ]
   },
 
@@ -257,7 +257,7 @@ export const RATGEBER_ENTRIES: RatgeberEntry[] = [
     relatedSlugs: [
       '', // Hub-Seite
       'aku-pferd',
-      'kaufvertrag'
+      'pferdekaufvertrag'
     ]
   },
 
@@ -364,7 +364,7 @@ export const RATGEBER_ENTRIES: RatgeberEntry[] = [
     relatedSlugs: [
       '', // Hub-Seite
       'aku-pferd',
-      'kaufvertrag'
+      'pferdekaufvertrag'
     ]
   },
 
@@ -454,7 +454,7 @@ export const RATGEBER_ENTRIES: RatgeberEntry[] = [
     relatedSlugs: [
       '', // Hub-Seite
       'freizeitpferd',
-      'kaufvertrag'
+      'pferdekaufvertrag'
     ]
   }
 ];

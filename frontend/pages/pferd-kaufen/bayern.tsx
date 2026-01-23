@@ -655,7 +655,7 @@ export default function PferdKaufenBayern() {
               <div className="bg-white rounded-lg border border-gray-200 p-5">
                 <h3 className="font-bold text-gray-900 mb-2">6. Kaufvertrag nicht vergessen</h3>
                 <p className="text-gray-600">
-                  Auch beim sympathischen Almbauern gilt: Nur ein schriftlicher <LocalizedLink href="/pferd-kaufen/kaufvertrag" className="text-brand hover:text-brand-dark underline">Kaufvertrag</LocalizedLink> schützt dich rechtlich.
+                  Auch beim sympathischen Almbauern gilt: Nur ein schriftlicher <LocalizedLink href="/pferde-ratgeber/pferdekaufvertrag" className="text-brand hover:text-brand-dark underline">Kaufvertrag</LocalizedLink> schützt dich rechtlich.
                 </p>
               </div>
             </div>

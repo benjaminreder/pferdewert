@@ -667,7 +667,7 @@ const PferdVerkaufen: NextPage = () => {
 
             <p className="text-lg text-gray-700 leading-relaxed mb-4"><strong>Phase 7: Vertragsabschluss & Übergabe (1-3 Tage)</strong></p>
             <ul className="space-y-2 text-gray-700 mb-6">
-              <li>✓ Kaufvertrag vorbereiten (siehe rechtliche Sektion)</li>
+              <li>✓ <LocalizedLink href="/pferde-ratgeber/pferdekaufvertrag" className="text-brand-brown hover:underline font-semibold">Kaufvertrag</LocalizedLink> vorbereiten</li>
               <li>✓ Kaufpreis vor Übergabe vollständig erhalten (Banküberweisung, kein Bargeld)</li>
               <li>✓ Übergabeprotokoll mit 5 Punkten (siehe rechtliche Sektion)</li>
               <li>✓ Equidenpass übergeben mit Eigentumsänderung</li>
@@ -793,7 +793,7 @@ const PferdVerkaufen: NextPage = () => {
             >
               <ol className="space-y-4 list-decimal list-inside text-sm md:text-base text-gray-700">
                 <li>
-                  <strong className="text-brand">Schriftlicher Kaufvertrag mit Pflichtangaben</strong> (§433ff BGB) – beim Pferd verkaufen ist ein rechtssicherer Vertrag Pflicht
+                  <strong className="text-brand">Schriftlicher <LocalizedLink href="/pferde-ratgeber/pferdekaufvertrag" className="text-brand hover:underline">Kaufvertrag</LocalizedLink> mit Pflichtangaben</strong> (§433ff BGB) – beim Pferd verkaufen ist ein rechtssicherer Vertrag Pflicht
                   <ul className="ml-6 mt-2 space-y-1">
                     <li>• Vollständige Identifikation (Name, Rasse, Alter, Geschlecht, Chipnummer)</li>
                     <li>• Kaufpreis und Zahlungsmodalitäten</li>

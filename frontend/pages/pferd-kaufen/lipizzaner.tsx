@@ -489,7 +489,7 @@ export default function Lipizzaner() {
               <strong>Private Züchter:</strong> Es gibt hochwertige Privatbetriebe in ganz Europa. Vorteil: persönliche Verbindung, oft faire Preise. Nachteil: Qualität ist variabel, du musst gründlich recherchieren.
             </p>
             <p className="text-lg text-gray-700 leading-relaxed">
-              <strong>Online-Plattformen (ehorses.de, equidenarium.com):</strong> Große Auswahl, schnell. Nachteil: Käufer-Beware-Prinzip, oft Vermittlungs-Markups. Bei jedem Kauf solltest du einen rechtssicheren <LocalizedLink href="/pferd-kaufen/kaufvertrag" className="text-brand hover:text-brand-dark underline">Pferdekaufvertrag</LocalizedLink> abschließen.
+              <strong>Online-Plattformen (ehorses.de, equidenarium.com):</strong> Große Auswahl, schnell. Nachteil: Käufer-Beware-Prinzip, oft Vermittlungs-Markups. Bei jedem Kauf solltest du einen rechtssicheren <LocalizedLink href="/pferde-ratgeber/pferdekaufvertrag" className="text-brand hover:text-brand-dark underline">Pferdekaufvertrag</LocalizedLink> abschließen.
             </p>
 
             <h3 className="text-2xl md:text-3xl font-serif font-bold text-gray-900 mt-8">

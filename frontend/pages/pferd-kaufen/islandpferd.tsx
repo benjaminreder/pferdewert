@@ -775,7 +775,7 @@ export default function IslandpferdKaufen() {
             </h3>
             <p className="text-lg text-gray-700 leading-relaxed">
               Einen rechtssicheren{' '}
-              <LocalizedLink href="/pferd-kaufen/kaufvertrag" className="text-brand hover:text-brand-dark underline">
+              <LocalizedLink href="/pferde-ratgeber/pferdekaufvertrag" className="text-brand hover:text-brand-dark underline">
                 Pferdekaufvertrag
               </LocalizedLink>{' '}
               sollten Sie unbedingt abschließen. Wichtige Punkte:

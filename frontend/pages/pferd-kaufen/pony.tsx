@@ -457,7 +457,7 @@ export default function PonyKaufen() {
               Kaufvertrag, AKU und Versicherungen sind unverzichtbar. Informiere dich über alle rechtlichen Aspekte in unserem Pferdekaufvertrag-Ratgeber.
             </p>
             <LocalizedLink
-              href="/pferd-kaufen/kaufvertrag"
+              href="/pferde-ratgeber/pferdekaufvertrag"
               className="inline-flex items-center text-brand font-semibold hover:text-brand-dark transition-colors"
             >
               Mehr zum Kaufvertrag
