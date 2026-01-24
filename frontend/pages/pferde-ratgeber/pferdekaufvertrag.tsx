@@ -203,7 +203,7 @@ const Pferdekaufvertrag: NextPage = () => {
         <RatgeberTableOfContents sections={sections} onNavigate={handleTableOfContentsClick} />
 
         {/* Download Box */}
-        <div className="max-w-3xl mx-auto px-4 md:px-6 py-8">
+        <div className="max-w-5xl mx-auto px-4 md:px-6 py-8">
           <div className="bg-gradient-to-r from-brand/5 to-brand-brown/5 border border-brand/20 rounded-xl p-6 md:p-8">
             <div className="flex flex-col md:flex-row items-center gap-6">
               <div className="flex-shrink-0 w-16 h-16 bg-brand/10 rounded-full flex items-center justify-center">
@@ -230,7 +230,7 @@ const Pferdekaufvertrag: NextPage = () => {
         </div>
 
         {/* Content Body - Text First */}
-        <div className="max-w-3xl mx-auto px-4 md:px-6 py-12 md:py-16 space-y-12">
+        <div className="max-w-5xl mx-auto px-4 md:px-6 py-12 md:py-16 space-y-12">
           {/* Section 1: Was ist ein Pferdekaufvertrag */}
           <section id="was-ist-vertrag" className="space-y-6 scroll-mt-32 lg:scroll-mt-40">
             <h2 className="text-3xl md:text-4xl font-serif font-bold text-brand">
@@ -1055,7 +1055,7 @@ const Pferdekaufvertrag: NextPage = () => {
 
         {/* FAQ Section */}
         <section id="faq" className="mt-16 scroll-mt-32 lg:scroll-mt-40">
-          <div className="max-w-3xl mx-auto px-4 md:px-6">
+          <div className="max-w-5xl mx-auto px-4 md:px-6">
             <FAQ
               faqs={faqItems}
               sectionTitle="Häufig gestellte Fragen zum Pferdekaufvertrag"
@@ -1066,7 +1066,7 @@ const Pferdekaufvertrag: NextPage = () => {
         </section>
 
         {/* Author Box */}
-        <div className="max-w-3xl mx-auto px-4 md:px-6">
+        <div className="max-w-5xl mx-auto px-4 md:px-6">
           <AuthorBox />
         </div>
 
