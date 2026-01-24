@@ -29,6 +29,16 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
+dev.log
+dev-output.log
+
+# 📊 Reports & Working Files
+.reports/
+.working/
+
+# 🗑️ Backup Files
+*.bak
+*.backup
 
 # 🌐 Vercel
 .vercel
