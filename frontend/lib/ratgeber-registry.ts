@@ -131,7 +131,7 @@ export const RATGEBER_ENTRIES: RatgeberEntry[] = [
     changefreq: 'monthly',
     relatedSlugs: [
       'was-kostet-ein-pferd',
-      '', // Hub-Seite /pferd-kaufen/
+      '/pferd-kaufen',
       'aku-pferd'
     ]
   },
@@ -149,7 +149,7 @@ export const RATGEBER_ENTRIES: RatgeberEntry[] = [
     relatedSlugs: [
       'islandpferd',
       'quarter-horse',
-      '' // Hub-Seite
+      '/pferd-kaufen'
     ]
   },
   // Spoke: /pferd-kaufen/anfaenger
@@ -181,7 +181,7 @@ export const RATGEBER_ENTRIES: RatgeberEntry[] = [
     priority: '0.7',
     changefreq: 'monthly',
     relatedSlugs: [
-      '', // Hub-Seite
+      '/pferd-kaufen',
       'anfaenger',
       'pferdekaufvertrag'
     ]
@@ -220,7 +220,7 @@ export const RATGEBER_ENTRIES: RatgeberEntry[] = [
     changefreq: 'monthly',
     relatedSlugs: [
       'was-kostet-ein-pferd',
-      '', // Hub-Seite /pferd-kaufen/
+      '/pferd-kaufen',
       'aku-pferd'
     ]
   },
@@ -238,7 +238,7 @@ export const RATGEBER_ENTRIES: RatgeberEntry[] = [
     changefreq: 'monthly',
     relatedSlugs: [
       'aku-pferd',
-      'pferd-verkaufen',
+      '/pferd-verkaufen',
       'was-kostet-ein-pferd'
     ]
   },
@@ -255,7 +255,7 @@ export const RATGEBER_ENTRIES: RatgeberEntry[] = [
     priority: '0.7',
     changefreq: 'monthly',
     relatedSlugs: [
-      '', // Hub-Seite
+      '/pferd-kaufen',
       'aku-pferd',
       'pferdekaufvertrag'
     ]
@@ -275,7 +275,7 @@ export const RATGEBER_ENTRIES: RatgeberEntry[] = [
     relatedSlugs: [
       'friese',
       'lipizzaner',
-      '' // Hub-Seite
+      '/pferd-kaufen'
     ]
   },
 
@@ -310,7 +310,7 @@ export const RATGEBER_ENTRIES: RatgeberEntry[] = [
     relatedSlugs: [
       'anfaenger',
       'was-kostet-ein-pferd',
-      '' // Hub-Seite
+      '/pferd-kaufen'
     ]
   },
 
@@ -326,7 +326,7 @@ export const RATGEBER_ENTRIES: RatgeberEntry[] = [
     priority: '0.7',
     changefreq: 'monthly',
     relatedSlugs: [
-      '', // Hub-Seite
+      '/pferd-kaufen',
       'haflinger',
       'aku-pferd'
     ]
@@ -344,7 +344,7 @@ export const RATGEBER_ENTRIES: RatgeberEntry[] = [
     priority: '0.7',
     changefreq: 'monthly',
     relatedSlugs: [
-      '', // Hub-Seite
+      '/pferd-kaufen',
       'haflinger',
       'anfaenger'
     ]
@@ -362,7 +362,7 @@ export const RATGEBER_ENTRIES: RatgeberEntry[] = [
     priority: '0.7',
     changefreq: 'monthly',
     relatedSlugs: [
-      '', // Hub-Seite
+      '/pferd-kaufen',
       'aku-pferd',
       'pferdekaufvertrag'
     ]
@@ -381,7 +381,7 @@ export const RATGEBER_ENTRIES: RatgeberEntry[] = [
     changefreq: 'monthly',
     relatedSlugs: [
       'freizeitpferd',
-      '', // Hub-Seite
+      '/pferd-kaufen',
       'aku-pferd'
     ]
   },
@@ -400,7 +400,7 @@ export const RATGEBER_ENTRIES: RatgeberEntry[] = [
     relatedSlugs: [
       'dressurpferd',
       'haflinger',
-      '' // Hub-Seite
+      '/pferd-kaufen'
     ]
   },
 
@@ -418,7 +418,7 @@ export const RATGEBER_ENTRIES: RatgeberEntry[] = [
     relatedSlugs: [
       'pony',
       'freizeitpferd',
-      '' // Hub-Seite
+      '/pferd-kaufen'
     ]
   },
 
@@ -434,7 +434,7 @@ export const RATGEBER_ENTRIES: RatgeberEntry[] = [
     priority: '0.7',
     changefreq: 'monthly',
     relatedSlugs: [
-      '', // Hub-Seite
+      '/pferd-kaufen',
       'haflinger',
       'quarter-horse'
     ]
@@ -452,7 +452,7 @@ export const RATGEBER_ENTRIES: RatgeberEntry[] = [
     priority: '0.7',
     changefreq: 'monthly',
     relatedSlugs: [
-      '', // Hub-Seite
+      '/pferd-kaufen',
       'freizeitpferd',
       'pferdekaufvertrag'
     ]

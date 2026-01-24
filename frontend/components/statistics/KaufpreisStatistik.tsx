@@ -12,7 +12,6 @@ import LocalizedLink from '@/components/LocalizedLink'
 const STATISTIK_DATEN = {
   anzahl: 90,
   durchschnitt: 15893,
-  median: 12500,
   min: 1000,
   max: 60000,
   stand: 'Januar 2026',
@@ -68,7 +67,7 @@ export default function KaufpreisStatistik({
             </h3>
             <p className="text-sm text-gray-600 flex items-center gap-1">
               <Database className="w-3.5 h-3.5" />
-              Basierend auf {STATISTIK_DATEN.anzahl} KI-Bewertungen ({STATISTIK_DATEN.stand})
+              Basierend auf {STATISTIK_DATEN.anzahl} Bewertungen auf PferdeWert.de
             </p>
           </div>
         </div>
@@ -84,16 +83,6 @@ export default function KaufpreisStatistik({
             </div>
             <div className="text-2xl font-bold text-brand-brown">
               {formatPreis(STATISTIK_DATEN.durchschnitt)} €
-            </div>
-          </div>
-
-          {/* Median */}
-          <div className="bg-white rounded-lg p-4 border border-gray-100 shadow-sm">
-            <div className="text-xs font-medium text-gray-500 uppercase tracking-wide mb-1">
-              Median
-            </div>
-            <div className="text-2xl font-bold text-gray-900">
-              {formatPreis(STATISTIK_DATEN.median)} €
             </div>
           </div>
 
@@ -158,8 +147,7 @@ export default function KaufpreisStatistik({
               <p className="text-sm text-gray-700">
                 <strong className="text-gray-900">Die meisten Pferde (39%)</strong> werden zwischen{' '}
                 <strong className="text-brand-brown">10.000 € und 20.000 €</strong> bewertet.
-                Der Median von {formatPreis(STATISTIK_DATEN.median)} € zeigt, dass die Hälfte
-                aller bewerteten Pferde unter diesem Wert liegt.
+                Der Durchschnittspreis liegt bei {formatPreis(STATISTIK_DATEN.durchschnitt)} €.
               </p>
             </div>
           </div>

@@ -13,6 +13,9 @@ import { HomepageReviewSchema } from "@/components/PferdeWertReviewSchema";
 const TestimonialsSection = dynamic(() => import("@/components/TestimonialsSection"), {
   loading: () => <div className="min-h-[400px] bg-gray-50 animate-pulse" />,
 });
+const KaufpreisStatistik = dynamic(() => import("@/components/statistics/KaufpreisStatistik"), {
+  loading: () => <div className="min-h-[300px] bg-amber-50 animate-pulse rounded-xl" />,
+});
 // E-E-A-T: Founder Section für Trust-Signale
 const FounderSection = dynamic(() => import("@/components/FounderSection"), {
   loading: () => <div className="min-h-[300px] bg-white animate-pulse" />,
@@ -566,6 +569,11 @@ export default function PferdeWertHomepage() {
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
                 Vermeide Fehlkäufe und Überzahlung – mit unserer KI-Pferdebewertung online erhältst du transparente Marktpreise vor dem Pferdekauf
               </p>
+            </div>
+
+            {/* Echte Marktdaten aus 90 KI-Bewertungen */}
+            <div className="max-w-3xl mx-auto mb-12">
+              <KaufpreisStatistik showCta={false} />
             </div>
 
             <div className="grid md:grid-cols-3 gap-8 mb-12">
