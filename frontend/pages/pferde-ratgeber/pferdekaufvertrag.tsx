@@ -82,28 +82,28 @@ const faqItems = [
 const seoLocales = {
   de: {
     title: 'Pferdekaufvertrag Muster PDF ▷ Vorlage zum Download',
-    description: 'Pferdekaufvertrag als PDF herunterladen ✓ Privat oder gewerblich ✓ Mit/ohne Gewährleistung ✓ Alle wichtigen Klauseln erklärt ✓ Rechtssicher kaufen & verkaufen',
-    keywords: 'pferdekaufvertrag, kaufvertrag pferd, pferdekaufvertrag muster, pferdekaufvertrag pdf, pferdekaufvertrag privat, pferdekaufvertrag ohne gewährleistung, kaufvertrag pferd privat',
+    description: 'Pferdekaufvertrag Muster als PDF downloaden ✓ Für privaten Pferdekauf ✓ Mit Gewährleistung & AKU-Anhang ✓ Alle Klauseln erklärt ✓ Sofort ausfüllen & unterschreiben',
+    keywords: 'pferdekaufvertrag, kaufvertrag pferd, pferdekaufvertrag muster, pferdekaufvertrag pdf, pferdekaufvertrag privat, kaufvertrag pferd privat, pferdekaufvertrag vorlage',
     ogTitle: 'Pferdekaufvertrag Muster PDF ▷ Vorlage zum Download',
-    ogDescription: 'Pferdekaufvertrag als PDF herunterladen. Privat oder gewerblich, mit/ohne Gewährleistung. Alle wichtigen Klauseln erklärt.',
+    ogDescription: 'Rechtssicherer Pferdekaufvertrag für den privaten Pferdekauf. PDF-Vorlage mit allen wichtigen Klauseln – sofort downloaden.',
     twitterTitle: 'Pferdekaufvertrag Muster PDF zum Download',
-    twitterDescription: 'Rechtssicheres Vertragsmuster für den Pferdekauf. Sofort als PDF herunterladen.',
+    twitterDescription: 'Rechtssicheres Vertragsmuster für den privaten Pferdekauf. Sofort als PDF herunterladen.',
   },
   at: {
     title: 'Pferdekaufvertrag Österreich: Muster PDF ▷ Vorlage Download',
-    description: 'Pferdekaufvertrag für Österreich als PDF ✓ Nach ABGB ✓ Privat oder gewerblich ✓ Mit/ohne Gewährleistung ✓ Rechtssicher kaufen & verkaufen',
+    description: 'Pferdekaufvertrag für Österreich als PDF ✓ Nach ABGB ✓ Für privaten Pferdekauf ✓ Mit Gewährleistung & AKU-Anhang ✓ Sofort ausfüllen & unterschreiben',
     keywords: 'pferdekaufvertrag österreich, kaufvertrag pferd österreich, pferdekaufvertrag muster österreich, pferdekaufvertrag privat',
     ogTitle: 'Pferdekaufvertrag Österreich: Muster PDF ▷ Vorlage Download',
-    ogDescription: 'Pferdekaufvertrag für Österreich als PDF. Nach ABGB, privat oder gewerblich.',
+    ogDescription: 'Rechtssicherer Pferdekaufvertrag für Österreich. Nach ABGB, für privaten Pferdekauf – sofort downloaden.',
     twitterTitle: 'Pferdekaufvertrag Österreich: Muster PDF',
     twitterDescription: 'Rechtssicheres Vertragsmuster für Österreich. Sofort als PDF herunterladen.',
   },
   ch: {
     title: 'Pferdekaufvertrag Schweiz: Muster PDF ▷ Vorlage Download',
-    description: 'Pferdekaufvertrag für die Schweiz als PDF ✓ Nach OR ✓ Privat oder gewerblich ✓ Mit/ohne Gewährleistung ✓ Rechtssicher kaufen & verkaufen',
+    description: 'Pferdekaufvertrag für die Schweiz als PDF ✓ Nach OR ✓ Für privaten Pferdekauf ✓ Mit Gewährleistung & AKU-Anhang ✓ Sofort ausfüllen & unterschreiben',
     keywords: 'pferdekaufvertrag schweiz, kaufvertrag pferd schweiz, pferdekaufvertrag muster schweiz, pferdekaufvertrag privat',
     ogTitle: 'Pferdekaufvertrag Schweiz: Muster PDF ▷ Vorlage Download',
-    ogDescription: 'Pferdekaufvertrag für die Schweiz als PDF. Nach OR, privat oder gewerblich.',
+    ogDescription: 'Rechtssicherer Pferdekaufvertrag für die Schweiz. Nach OR, für privaten Pferdekauf – sofort downloaden.',
     twitterTitle: 'Pferdekaufvertrag Schweiz: Muster PDF',
     twitterDescription: 'Rechtssicheres Vertragsmuster für die Schweiz. Sofort als PDF herunterladen.',
   },
@@ -178,9 +178,9 @@ const Pferdekaufvertrag: NextPage = () => {
           badgeLabel="Rechtsguide"
           badgeIcon={fileTextIcon}
           title="Pferdekaufvertrag: Muster & Vorlage zum Download"
-          subtitle="Rechtssicheres Vertragsmuster für Käufer & Verkäufer – privat oder gewerblich, mit oder ohne Gewährleistung – sofort als PDF"
+          subtitle="PDF-Vorlage für den privaten Pferdekauf & -verkauf – inkl. Gewährleistung, Gefahrübergang & Zahlungsmodalitäten – sofort downloaden"
           readTime="15 Min."
-          publishDate="November 2025"
+          publishDate="Januar 2026"
           author={{ name: 'Benjamin Reder', href: '/ueber-pferdewert' }}
           primaryCta={primaryCta}
           secondaryCta={secondaryCta}
