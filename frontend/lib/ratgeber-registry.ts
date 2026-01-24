@@ -66,7 +66,7 @@ export const RATGEBER_ENTRIES: RatgeberEntry[] = [
     changefreq: 'monthly',
     relatedSlugs: [
       'aku-pferd/kosten',
-      '', // Hub-Seite /pferd-kaufen/
+      '/pferd-kaufen',
       'was-kostet-ein-pferd'
     ]
   },
@@ -79,7 +79,7 @@ export const RATGEBER_ENTRIES: RatgeberEntry[] = [
     image: '/images/ratgeber/aku-pferd/kosten/woman-handler-horse-halter-outdoor.webp', // Außenaufnahme mit Besitzerin – passend zum Kostenthema
     priority: '0.6',
     changefreq: 'monthly',
-    relatedSlugs: ['aku-pferd', '', 'was-kostet-ein-pferd'] // '' = Hub-Seite /pferd-kaufen/
+    relatedSlugs: ['aku-pferd', '/pferd-kaufen', 'was-kostet-ein-pferd']
   },
 
   // ============================================================================
@@ -116,7 +116,7 @@ export const RATGEBER_ENTRIES: RatgeberEntry[] = [
     relatedSlugs: [
       'pferd-kosten-monatlich',
       'aku-pferd',
-      '' // Hub-Seite /pferd-kaufen/
+      '/pferd-kaufen'
     ]
   },
   // Monatliche Kosten - Informational Content
@@ -479,6 +479,28 @@ export function getRatgeberBySlug(slug: string): RatgeberEntry | undefined {
 }
 
 /**
+ * Get ratgeber entry by full path (e.g., '/pferd-kaufen' or '/pferde-ratgeber/aku-pferd')
+ * This is useful for referencing hub pages which have empty slugs but unique basePaths.
+ */
+export function getRatgeberByPath(path: string): RatgeberEntry | undefined {
+  // Normalize path (remove trailing slash)
+  const normalizedPath = path.endsWith('/') ? path.slice(0, -1) : path;
+
+  return RATGEBER_ENTRIES.find(entry => {
+    const entryPath = getRatgeberPathForEntry(entry);
+    return entryPath === normalizedPath;
+  });
+}
+
+/**
+ * Internal helper: Get full URL path for a ratgeber entry directly
+ */
+function getRatgeberPathForEntry(entry: RatgeberEntry): string {
+  const basePath = entry.basePath || '/pferde-ratgeber';
+  return entry.slug === '' ? basePath : `${basePath}/${entry.slug}`;
+}
+
+/**
  * Get all ratgeber entries for a specific category
  */
 export function getRatgeberByCategory(category: string): RatgeberEntry[] {
@@ -518,9 +540,19 @@ export function getRelatedArticles(slug: string, overrideSlugs?: string[]): Ratg
     slugsToUse = sameCategory.map(entry => entry.slug);
   }
 
-  // Map slugs to entries and filter out any that don't exist
+  // Map slugs/paths to entries and filter out any that don't exist
+  // Supports both:
+  // - Regular slugs: 'aku-pferd', 'was-kostet-ein-pferd'
+  // - Full paths for hubs: '/pferd-kaufen', '/pferd-verkaufen'
   const relatedEntries = slugsToUse
-    .map(relatedSlug => getRatgeberBySlug(relatedSlug))
+    .map(ref => {
+      // If reference starts with '/', treat it as a full path (for hub pages)
+      if (ref.startsWith('/')) {
+        return getRatgeberByPath(ref);
+      }
+      // Otherwise treat as slug
+      return getRatgeberBySlug(ref);
+    })
     .filter((entry): entry is RatgeberEntry => entry !== undefined);
 
   return relatedEntries;
