@@ -160,7 +160,7 @@ export default function WasKostetEinPferd() {
       {/* Hero Section */}
       <RatgeberHero
           title="Was kostet ein Pferd?"
-          subtitle="Echte Daten aus unserer Community – und warum wir selbst über 800 € pro Monat ausgeben"
+          subtitle="Durchschnitt: 15.893 € – basierend auf echten Daten aus unserer Community"
           primaryCta={PRIMARY_CTA}
           secondaryCta={SECONDARY_CTA}
         />
