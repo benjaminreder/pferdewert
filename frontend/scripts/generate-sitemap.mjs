@@ -78,7 +78,6 @@ const NOINDEX_PAGES = [
   '/pferde-ratgeber',           // Hub-Seite ohne unique Content
   // Low-value or consolidated pages
   '/pferd-kaufen/fohlen',       // SV: 1.300 - konsolidiert
-  '/pferde-ratgeber/pferdekaufvertrag',  // SV: 1.000 - informational intent, moved from /pferd-kaufen/
   '/pferd-kaufen/lipizzaner',   // SV: 480 - niedrig
   '/pferd-kaufen/anfaenger',    // SV: 260 - niedrig
 ];
