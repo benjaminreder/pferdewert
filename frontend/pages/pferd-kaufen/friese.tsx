@@ -148,6 +148,7 @@ export default function FrieseKaufen() {
         wordCount={2600}
         breadcrumbTitle="Friese kaufen"
         faqItems={faqItems}
+        noindex={true}
       />
 
       <article>
