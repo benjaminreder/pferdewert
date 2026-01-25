@@ -53,7 +53,7 @@ const seoLocales = {
 const onlineMarketplaces = [
   {
     name: 'ehorses.de',
-    url: 'https://www.ehorses.de/pferde/bayern',
+    url: 'https://www.ehorses.de/verkaufspferde/',
     listings: '~1.100',
     description: 'Größter Pferdemarkt Europas mit umfangreichen Bayern-Filtern',
     highlight: true,
