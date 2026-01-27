@@ -34,6 +34,8 @@
     "test:e2e": "playwright test",
     "fix-order": "node scripts/fix-order.mjs",
     "sitemap": "node scripts/generate-sitemap.mjs",
+    "indexnow": "node scripts/indexnow-ping.mjs",
+    "sitemap:ping": "node scripts/generate-sitemap.mjs && node scripts/indexnow-ping.mjs",
     "seo": "node scripts/seo-process.mjs",
     "check-urls": "node scripts/check-ratgeber-urls.mjs"
   },

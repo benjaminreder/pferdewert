@@ -1,0 +1,38 @@
+# PferdeWert.de
+
+> KI-gestützte Pferdebewertung für den deutschsprachigen Markt (DE/AT/CH).
+
+PferdeWert ist ein Online-Service zur Wertermittlung von Pferden. Nutzer geben Informationen zu ihrem Pferd ein (Rasse, Alter, Ausbildungsstand, Gesundheit, Disziplin etc.) und erhalten eine datenbasierte Marktpreisanalyse durch Künstliche Intelligenz.
+
+## Kernseiten
+
+- [Startseite](https://pferdewert.de/): Einstieg zur Pferdebewertung
+- [Pferde-Preis berechnen](https://pferdewert.de/pferde-preis-berechnen): Bewertungsformular - Pferdewert in 2 Minuten berechnen
+- [Beispiel-Analyse](https://pferdewert.de/beispiel-analyse): Musterbeispiel einer KI-Pferdebewertung
+- [Pferd verkaufen](https://pferdewert.de/pferd-verkaufen): Ratgeber zum Pferdeverkauf mit Wertermittlung
+
+## Ratgeber (Informational)
+
+- [AKU Pferd](https://pferdewert.de/pferde-ratgeber/aku-pferd): Ankaufsuntersuchung beim Pferd - Ablauf, Kosten, Tipps
+- [AKU Kosten](https://pferdewert.de/pferde-ratgeber/aku-pferd/kosten): Was kostet eine Ankaufsuntersuchung?
+- [Was kostet ein Pferd?](https://pferdewert.de/pferde-ratgeber/was-kostet-ein-pferd): Kaufpreise nach Rasse, Alter und Ausbildung
+- [Pferd Kosten monatlich](https://pferdewert.de/pferde-ratgeber/pferd-kosten-monatlich): Laufende Kosten der Pferdehaltung
+- [Pferdemarkt](https://pferdewert.de/pferde-ratgeber/pferdemarkt): Übersicht der Pferdemärkte und Verkaufsplattformen
+- [Pferdekaufvertrag](https://pferdewert.de/pferde-ratgeber/pferdekaufvertrag): Muster und Tipps zum Kaufvertrag
+
+## Pferd kaufen (Commercial)
+
+- [Freizeitpferd kaufen](https://pferdewert.de/pferd-kaufen/freizeitpferd): Ratgeber zum Kauf eines Freizeitpferds
+- [Springpferd kaufen](https://pferdewert.de/pferd-kaufen/springpferd): Springpferde - Preise und Kaufberatung
+- [Dressurpferd kaufen](https://pferdewert.de/pferd-kaufen/dressurpferd): Dressurpferde - Preise und Kaufberatung
+- [Haflinger kaufen](https://pferdewert.de/pferd-kaufen/haflinger): Haflinger - Preise und Rasseportrait
+- [Pony kaufen](https://pferdewert.de/pferd-kaufen/pony): Ponys - Preise und Kaufberatung
+- [Quarter Horse kaufen](https://pferdewert.de/pferd-kaufen/quarter-horse): Quarter Horse - Preise und Rasseportrait
+- [Friese kaufen](https://pferdewert.de/pferd-kaufen/friese): Friesen - Preise und Rasseportrait
+- [Islandpferd kaufen](https://pferdewert.de/pferd-kaufen/islandpferd): Islandpferde - Preise und Rasseportrait
+- [Pferd kaufen Bayern](https://pferdewert.de/pferd-kaufen/bayern): Pferdekauf in Bayern - Markt und Angebote
+- [Pferd kaufen NRW](https://pferdewert.de/pferd-kaufen/nrw): Pferdekauf in NRW - Markt und Angebote
+
+## Über uns
+
+- [Über PferdeWert](https://pferdewert.de/ueber-pferdewert): Mission, Team und Methodik
